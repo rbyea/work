@@ -434,6 +434,88 @@ ul {
   margin-top: -20px;
 }
 
+.content-two {
+  width: 335px;
+}
+
+.footer {
+  padding-top: 25px;
+  padding-bottom: 22px;
+  background-color: #f6f6f6;
+}
+
+.footer-content__image {
+  margin-bottom: 62px;
+}
+
+.footer-content__text {
+  color: #666666;
+  font-family: "Arial MT";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.footer-content__list ul li {
+  font-family: "Arial MT";
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.footer-content__list ul li a {
+  color: #666666;
+}
+
+.footer-content__list ul li a:hover {
+  text-decoration: none;
+}
+
+.footer-content__box {
+  margin-bottom: 24px;
+}
+
+.footer-content__box:last-child {
+  margin-bottom: 0;
+}
+
+.footer-content__box_text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.footer-content__box_phone {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.footer-content__box_phone a {
+  text-decoration: none;
+  color: #464646;
+}
+
+.footer-content__box_email {
+  color: #464646;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.footer-content__box_email a {
+  text-decoration: none;
+  color: #464646;
+}
+
+.footer-content__box_time {
+  color: #464646;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.footer-content__box_time a {
+  text-decoration: none;
+  color: #464646;
+}
+
 body {
   color: #666;
   font-family: Arial, Helvetica, sans-serif;
