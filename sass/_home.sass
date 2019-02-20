@@ -29,6 +29,7 @@
       max-height: 100%
   
 .home
+  padding-top: 18px
   &-list
     color: #666666
     font-family: "Arial MT"
@@ -40,4 +41,76 @@
         content: '<'
   &-guidance
     text-align: right
+  &-content
+    margin-left: 48px
+    &__title
+      margin-top: 36px
+    &__assessment
+      display: flex
+      &_image
+        display: flex
+        &-text
+          margin-left: 13px
+      &_vendor
+        margin-left: 120px
+    &__price
+      font-size: 30px
+      font-weight: 400
+      line-height: 36px
+      font-family: "Arial - Bold MT"
+      font-weight: 700
+      &-cross
+        color: #333333
+        font-family: "Arial MT"
+        font-size: 20px
+        font-weight: 400
+        line-height: 36px
+        text-decoration: line-through
+    &__list
+      margin-top: 35px
+      li
+        margin-left: 65px
+        padding: 10px
+        color: #666666
+        font-family: "Arial MT"
+        font-size: 16px
+        font-weight: 400
+        line-height: 36px
+    &__subtitle
+      margin-top: 38px
+      color: #1484c7
+      font-family: "Arial MT"
+      font-size: 23px
+      font-weight: 400
+      line-height: 36px
 
+ul
+  padding: 0
+  margin: 0
+  list-style: none
+
+.list
+  &-one
+    position: relative
+    &:before
+      content: url('../img/slider/verified.png')
+      position: absolute
+      left: -32px
+      top: 17px
+  &-two
+    position: relative
+    &:before
+      content: url('../img/slider/exchange.png')
+      position: absolute
+      left: -32px
+      top: 17px
+  &-three
+    position: relative
+    &:before
+      content: url('../img/slider/delivery-truck.png')
+      position: absolute
+      left: -32px
+      top: 17px
+
+.home-content__assesment_image-text
+  margin-left: 13px
