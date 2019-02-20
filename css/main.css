@@ -108,7 +108,6 @@
   background-color: transparent;
   border: 1px solid #dadada;
   color: #666666;
-  font-family: "Arial MT";
   font-size: 16px;
   font-weight: 400;
 }
@@ -294,6 +293,56 @@ ul {
   margin-left: 13px;
 }
 
+.delivery {
+  margin-bottom: 50px;
+}
+
+.delivery .section-title {
+  margin-bottom: 42px;
+}
+
+.delivery-item {
+  max-width: 360px;
+  padding: 20px 27px 15px 13px;
+  border-radius: 4px;
+  border: 1px solid #dadada;
+}
+
+.delivery-item__title {
+  color: #333;
+  line-height: 36px;
+}
+
+.delivery-item__title.view {
+  padding-left: 65px;
+  background: url("../img/delivery/delivery-item-1.png") no-repeat left center;
+}
+
+.delivery-item__title.i-delivery {
+  padding-left: 65px;
+  background: url("../img/delivery/delivery-item-2.png") no-repeat left center;
+}
+
+.delivery-item__title.payment {
+  padding-left: 65px;
+  background: url("../img/delivery/delivery-item-3.png") no-repeat left center;
+}
+
+body {
+  color: #666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.section-title {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
 .btn-transparent {
   width: 196px;
   height: 37px;
@@ -301,7 +350,6 @@ ul {
   border: 1px solid #dadada;
   background-color: transparent;
   color: #666666;
-  font-family: "Arial MT";
   font-size: 16px;
   line-height: 36px;
 }
