@@ -15,4 +15,9 @@ $(function(){
     focusOnSelect: true,
     vertical: true
   });
+
+});
+
+$(document).ready(function(){
+  $('.slider').zoom({url: 'photo-slider.png'});
 });
