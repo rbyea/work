@@ -161,6 +161,7 @@
 
 .home {
   padding-top: 18px;
+  padding-bottom: 31px;
 }
 
 .home-list {
@@ -187,7 +188,8 @@
 }
 
 .home-content__title {
-  margin-top: 36px;
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
 .home-content__assessment {
@@ -204,10 +206,12 @@
 
 .home-content__assessment_image-text {
   margin-left: 13px;
+  margin-top: 5px;
 }
 
 .home-content__assessment_vendor {
   margin-left: 120px;
+  margin-top: 4px;
 }
 
 .home-content__price {
@@ -216,6 +220,25 @@
   line-height: 36px;
   font-family: "Arial - Bold MT";
   font-weight: 700;
+  margin-top: -6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #333333;
+}
+
+.home-content__price_discount {
+  position: relative;
+  margin-left: 20px;
+}
+
+.home-content__price_discount:before {
+  content: "25%";
+  position: absolute;
+  font-size: 16px;
+  left: 8px;
+  top: 3px;
+  color: #333333;
 }
 
 .home-content__price-cross {
@@ -225,15 +248,12 @@
   font-weight: 400;
   line-height: 36px;
   text-decoration: line-through;
-}
-
-.home-content__list {
-  margin-top: 35px;
+  margin-top: 24px;
 }
 
 .home-content__list li {
   margin-left: 65px;
-  padding: 10px;
+  padding: -3px;
   color: #666666;
   font-family: "Arial MT";
   font-size: 16px;
@@ -242,12 +262,48 @@
 }
 
 .home-content__subtitle {
-  margin-top: 38px;
+  margin-top: 18px;
   color: #1484c7;
   font-family: "Arial MT";
   font-size: 23px;
   font-weight: 400;
   line-height: 36px;
+}
+
+.home-content__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.button-blue {
+  width: 277px;
+  height: 55px;
+  border-radius: 4px;
+  background-color: #1484c7;
+  color: #ffffff;
+  font-family: "Arial MT";
+  font-size: 24px;
+  line-height: 36px;
+  border: none;
+}
+
+.button-green {
+  width: 277px;
+  height: 55px;
+  border-radius: 4px;
+  background-color: #87bd23;
+  color: #ffffff;
+  font-family: "Arial - Bold MT";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  font-family: Arial;
+  padding-right: 48px;
+  padding-left: 48px;
+  border: none;
+  margin-left: 16px;
 }
 
 ul {
@@ -263,8 +319,8 @@ ul {
 .list-one:before {
   content: url("../img/slider/verified.png");
   position: absolute;
-  left: -32px;
-  top: 17px;
+  left: -37px;
+  top: 5px;
 }
 
 .list-two {
@@ -274,8 +330,8 @@ ul {
 .list-two:before {
   content: url("../img/slider/exchange.png");
   position: absolute;
-  left: -32px;
-  top: 17px;
+  left: -37px;
+  top: 5px;
 }
 
 .list-three {
@@ -285,8 +341,8 @@ ul {
 .list-three:before {
   content: url("../img/slider/delivery-truck.png");
   position: absolute;
-  left: -32px;
-  top: 17px;
+  left: -37px;
+  top: 5px;
 }
 
 .home-content__assesment_image-text {
@@ -326,6 +382,56 @@ ul {
 .delivery-item__title.payment {
   padding-left: 65px;
   background: url("../img/delivery/delivery-item-3.png") no-repeat left center;
+}
+
+.specifications {
+  background-color: #f6f6f6;
+  padding-top: 35px;
+  padding-bottom: 44px;
+}
+
+.specifications-content {
+  width: 400px;
+  margin-bottom: 60px;
+}
+
+.specifications-content ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.specifications-content__list {
+  font-size: 16px;
+  color: #666666;
+}
+
+.specifications-content__list-two {
+  color: #333333;
+}
+
+.nth:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  border-bottom: 1px dotted #000;
+  height: 1em;
+  margin: 0 .4em;
+}
+
+.description-text {
+  margin-bottom: 43px;
+}
+
+.equipment-text {
+  margin-top: 21px;
+}
+
+.equipment-text p {
+  margin-top: -20px;
 }
 
 body {
