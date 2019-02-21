@@ -24,6 +24,22 @@
   color: #fbde12;
 }
 
+#easy__zoom {
+  width: 600px;
+  height: 400px;
+  border: 5px solid #eee;
+  background: #fff;
+  color: #333;
+  position: absolute;
+  top: 15px;
+  left: 400px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px #555;
+          box-shadow: 0 0 10px #555;
+  line-height: 400px;
+  text-align: center;
+}
+
 .header {
   padding-top: 10px;
 }

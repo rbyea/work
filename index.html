@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/jqzoom.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Магазин</title>
 </head>
@@ -95,8 +94,16 @@
             <div class="slider-nav__item"><img src="img/slider/photo-slider-2.png" alt="slider"></div>
           </div>
           <div class="slider">
-            <div class="slider__item tozoom"><img class="jqzoom" src="img/slider/photo-slider.png" alt="img/slider/photo-slider.png"></div>
+						<a href="img/slider/photo-slider.png" class="slider__item zoom">
+							<img src="img/slider/photo-slider.png" alt="слайд">
+						</a>
+						<a href="img/slider/photo-slider-2.png" class="slider__item jqzoom">
+							<img src="img/slider/photo-slider-2.png" alt="слайд">
+						</a>
+            <!-- 
+							<div class="slider__item tozoom"><img class="jqzoom" src="img/slider/photo-slider.png" alt="img/slider/photo-slider.png"></div>
             <div class="slider__item tozoom"><img class="jqzoom" src="img/slider/photo-slider-2.png" alt="img/slider/photo-slider-2.png"></div>
+						 -->
           </div>
           <div class="home-guidance">
             Наведите на изображение чтобы увеличить его
@@ -437,9 +444,10 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://programki.by/js/jquery/1.6.4/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
-		<script src="js/jquery.jqzoom.js"></script>
+		<script src="js/easyzoom.min.js"></script>
   <script src="js/js.js"></script>
 </body>
 
