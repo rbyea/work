@@ -1,3 +1,29 @@
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.rating-item {
+  width: 22px;
+  color: #fdc635;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.rating-item.active,
+.rating-item.active ~ *, .rating-item:hover,
+.rating-item:hover ~ * {
+  color: #fbde12;
+}
+
 .header {
   padding-top: 10px;
 }
@@ -198,13 +224,7 @@
   display: flex;
 }
 
-.home-content__assessment_image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.home-content__assessment_image-text {
+.home-content__assessment_rating-text {
   margin-left: 13px;
   margin-top: 5px;
 }

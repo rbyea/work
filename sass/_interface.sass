@@ -1,0 +1,14 @@
+.rating
+	display: flex
+	flex-direction: row-reverse
+	justify-content: flex-end
+	&-item
+		width: 22px
+		color: #fdc635
+		font-size: 28px
+		cursor: pointer
+		&.active,
+		&.active ~ *,
+		&:hover,
+		&:hover ~ *
+			color: #fbde12
