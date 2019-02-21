@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jqzoom.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Магазин</title>
 </head>
@@ -94,16 +95,10 @@
             <div class="slider-nav__item"><img src="img/slider/photo-slider-2.png" alt="slider"></div>
           </div>
           <div class="slider">
-						<a href="img/slider/photo-slider.png" class="slider__item zoom">
-							<img src="img/slider/photo-slider.png" alt="слайд">
-						</a>
-						<a href="img/slider/photo-slider-2.png" class="slider__item jqzoom">
-							<img src="img/slider/photo-slider-2.png" alt="слайд">
-						</a>
-            <!-- 
-							<div class="slider__item tozoom"><img class="jqzoom" src="img/slider/photo-slider.png" alt="img/slider/photo-slider.png"></div>
-            <div class="slider__item tozoom"><img class="jqzoom" src="img/slider/photo-slider-2.png" alt="img/slider/photo-slider-2.png"></div>
-						 -->
+            <div class="slider__item tozoom"><img class="jqzoom" src="img/slider/photo-slider.png"
+                alt="img/slider/photo-slider.png"></div>
+            <div class="slider__item tozoom"><img class="jqzoom" src="img/slider/photo-slider-2.png"
+                alt="img/slider/photo-slider-2.png"></div>
           </div>
           <div class="home-guidance">
             Наведите на изображение чтобы увеличить его
@@ -114,13 +109,13 @@
             <h2 class="home-content__title">Название продукта такое название ага</h2>
             <div class="home-content__assessment">
               <div class="home-content__assessment_rating">
-								<div class="rating">
-									<div class="rating-item" data-rate="5">&#9733;</div>
-									<div class="rating-item" data-rate="4">&#9733;</div>
-									<div class="rating-item" data-rate="3">&#9733;</div>
-									<div class="rating-item" data-rate="2">&#9733;</div>
-									<div class="rating-item active" data-rate="1">&#9733;</div>
-								</div>
+                <div class="rating">
+                  <div class="rating-item" data-rate="5">&#9733;</div>
+                  <div class="rating-item" data-rate="4">&#9733;</div>
+                  <div class="rating-item" data-rate="3">&#9733;</div>
+                  <div class="rating-item" data-rate="2">&#9733;</div>
+                  <div class="rating-item active" data-rate="1">&#9733;</div>
+                </div>
                 <div class="home-content__assessment_rating-text">
                   Отзывы
                 </div>
@@ -332,47 +327,168 @@
         </div>
       </div>
     </div>
-	</section>
-	
-	<section class="review">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h3 class="section-title">
-						Видеообзор
-					</h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-9">
-					<div class="review-video">
-						<img src="img/review/review.jpg" alt="Видеообзор">
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="product-title">
-						Название продукт
-						название продукт
-						ага Название продукт
-					</div>
-					<div class="rating">
-						<div class="home-content__assessment_rating">
-							<div class="rating">
-								<div class="rating-item" data-rate="5">&#9733;</div>
-								<div class="rating-item" data-rate="4">&#9733;</div>
-								<div class="rating-item" data-rate="3">&#9733;</div>
-								<div class="rating-item" data-rate="2">&#9733;</div>
-								<div class="rating-item active" data-rate="1">&#9733;</div>
-							</div>
-							<div class="home-content__assessment_rating-text">
-								Отзывы
-							</div>
-						</div>
-					</div> <!-- /rating -->
-				</div>
-			</div>
-		</div>
-	</section>
+  </section>
+
+  <section class="review">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">
+            Видеообзор
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <div class="review-video">
+            <img src="img/review/review.jpg" alt="Видеообзор">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="product-title">
+            Название продукт
+            название продукт
+            ага Название продукт
+          </div>
+          <div class="rating">
+            <div class="home-content__assessment_rating">
+              <div class="rating">
+                <div class="rating-item" data-rate="5">&#9733;</div>
+                <div class="rating-item" data-rate="4">&#9733;</div>
+                <div class="rating-item" data-rate="3">&#9733;</div>
+                <div class="rating-item" data-rate="2">&#9733;</div>
+                <div class="rating-item active" data-rate="1">&#9733;</div>
+              </div>
+              <div class="home-content__assessment_rating-text">
+                Отзывы
+              </div>
+            </div>
+          </div> <!-- /rating -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="people">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title people-title">
+            Отзывы
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="people-box">
+            <div class="rating">
+              <div class="rating-item" data-rate="5">&#9733;</div>
+              <div class="rating-item" data-rate="4">&#9733;</div>
+              <div class="rating-item" data-rate="3">&#9733;</div>
+              <div class="rating-item" data-rate="2">&#9733;</div>
+              <div class="rating-item active" data-rate="1">&#9733;</div>
+            </div>
+            <div class="people-box__date">
+              2 февраля 2016
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="people-content">
+            <div class="people-content__title">
+              Жардин Алексей<span>, 34 года</span>
+            </div>
+            <div class="people-content__subtitle">
+              Я купил это на <a href="http://aaaaa.ru/">aaaaa.ru</a>
+            </div>
+            <div class="people-content__text">
+              Спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо
+              спасибо спасибо
+              спасибо спасиб оспасибо!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="people-box">
+            <div class="rating">
+              <div class="rating-item" data-rate="5">&#9733;</div>
+              <div class="rating-item" data-rate="4">&#9733;</div>
+              <div class="rating-item" data-rate="3">&#9733;</div>
+              <div class="rating-item" data-rate="2">&#9733;</div>
+              <div class="rating-item active" data-rate="1">&#9733;</div>
+            </div>
+            <div class="people-box__date">
+              2 февраля 2016
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="people-content">
+            <div class="people-content__title">
+              Жардин Алексей<span>, 34 года</span>
+            </div>
+            <div class="people-content__subtitle">
+              Я купил это на <a href="http://aaaaa.ru/">aaaaa.ru</a>
+            </div>
+            <div class="people-content__text">
+              Спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо
+              спасибо
+              спасибо
+              спасибо спасиб оспасибо!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="people-box">
+            <div class="rating">
+              <div class="rating-item" data-rate="5">&#9733;</div>
+              <div class="rating-item" data-rate="4">&#9733;</div>
+              <div class="rating-item" data-rate="3">&#9733;</div>
+              <div class="rating-item" data-rate="2">&#9733;</div>
+              <div class="rating-item active" data-rate="1">&#9733;</div>
+            </div>
+            <div class="people-box__date">
+              2 февраля 2016
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="people-content">
+            <div class="people-content__title">
+              Жардин Алексей<span>, 34 года</span>
+            </div>
+            <div class="people-content__subtitle">
+              Я купил это на <a href="http://aaaaa.ru/">aaaaa.ru</a>
+            </div>
+            <div class="people-content__text">
+              Спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо спасибо
+              спасибо
+              спасибо
+              спасибо спасиб оспасибо!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="people-link">
+            <a href="#">
+              Показать еще отзывы
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="people-link-two">
+            <a href="#">Оставить отзыв</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container">
@@ -447,7 +563,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="https://programki.by/js/jquery/1.6.4/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
-		<script src="js/easyzoom.min.js"></script>
+  <script src="js/jquery.jqzoom.js"></script>
   <script src="js/js.js"></script>
 </body>
 
