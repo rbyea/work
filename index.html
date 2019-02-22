@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="css/multizoom.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Магазин</title>
@@ -60,12 +60,12 @@
             <div class="header-navbar__list">
               <nav>
                 <ul>
-                  <li><a href="#">Характеристики</a> </li>
-                  <li><a href="#">Описание</a> </li>
-                  <li><a href="#">Комплектация</a> </li>
-                  <li><a href="#">Видеообзор</a> </li>
-                  <li><a href="#">Оплата и доставка</a></li>
-                  <li><a href="#">Отзывы</a> </li>
+                  <li><a href="#menu-one">Характеристики</a> </li>
+                  <li><a href="#menu-two">Описание</a> </li>
+                  <li><a href="#menu-three">Комплектация</a> </li>
+                  <li><a href="#menu-four">Видеообзор</a> </li>
+                  <li><a href="#menu-five">Оплата и доставка</a></li>
+                  <li><a href="#menu-six">Отзывы</a> </li>
                 </ul>
               </nav>
             </div>
@@ -95,11 +95,9 @@
             <div class="slider-nav__item"><img src="img/slider/photo-slider-2.png" alt="slider"></div>
           </div>
           <div class="slider">
-							<img class="slider__item zoom" src="img/slider/photo-slider.png"
-								alt="фото товара">
+            <img class="slider__item zoom" src="img/slider/photo-slider.png" alt="фото товара">
 
-							<img class="slider__item zoom" src="img/slider/photo-slider-2.png"
-								alt="фото товара">
+            <img class="slider__item zoom" src="img/slider/photo-slider-2.png" alt="фото товара">
           </div>
           <div class="home-guidance">
             Наведите на изображение чтобы увеличить его
@@ -162,7 +160,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2>Характеристики</h2>
+          <h2 id="menu-one" href="#menu-one">Характеристики</h2>
         </div>
       </div>
       <div class="row">
@@ -242,7 +240,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h2 class="description">
+          <h2 id="menu-two" class="description">
             Описание
           </h2>
         </div>
@@ -267,7 +265,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h2 class="equipment">
+          <h2 id="menu-three" class="equipment">
             Комплектация
           </h2>
         </div>
@@ -287,7 +285,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="section-title">
+          <h2 id="menu-five" class="section-title">
             Доставка и Оплата
           </h2>
         </div>
@@ -334,7 +332,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">
+          <h3 id="menu-four" class="section-title">
             Видеообзор
           </h3>
         </div>
@@ -360,7 +358,7 @@
                 <div class="rating-item" data-rate="2">&#9733;</div>
                 <div class="rating-item active" data-rate="1">&#9733;</div>
               </div>
-              <div class="home-content__assessment_rating-text">
+              <div id="menu-five" class="home-content__assessment_rating-text">
                 Отзывы
               </div>
             </div>
@@ -391,9 +389,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="section-title people-title">
+          <h2 id="menu-six" class="section-title people-title">
             Отзывы
-          </div>
+          </h2>
         </div>
       </div>
       <div class="row">
@@ -578,14 +576,15 @@
     </div>
   </footer>
 
-	<script src="js/jquery.min.js"></script>
-	<script>
-		var jQuery_1_6 = $.noConflict(true);
-	</script>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script>
+    var jQuery_1_6 = $.noConflict(true);
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/multizoom.js"></script>
-	<script src="js/js.js"></script>
+  <script src="js/js.js"></script>
+
 </body>
 
 </html>

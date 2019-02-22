@@ -104,7 +104,6 @@
 }
 
 .header-navbar {
-  padding-top: 5px;
   height: 40px;
   background-color: #f6f6f6;
 }
@@ -120,6 +119,18 @@
 
 .header-navbar__list ul li {
   margin-right: 35px;
+  font-family: "Arial MT";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.header-navbar__list ul li a {
+  color: #666666;
+}
+
+.header-navbar__list ul li a:hover {
+  text-decoration: none;
 }
 
 .header-navbar__btn {
