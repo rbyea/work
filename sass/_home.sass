@@ -34,11 +34,17 @@
     color: #666666
     font-family: "Arial MT"
     font-size: 14px
+    &__close
+      &:before
+        display: none
     a
-      margin-left: 5px
+      margin-left: 18px
       color: #666666
+      position: relative
       &:before
         content: '<'
+        position: absolute
+        left: -16px
   &-guidance
     text-align: center
     margin-left: 103px
