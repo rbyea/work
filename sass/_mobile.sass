@@ -1,0 +1,46 @@
+.humburger
+	cursor: pointer
+	display: none
+	&-wrap
+		position: relative
+		width: 38px
+    margin-top: 22px
+    margin-right: 22px
+    display: none
+		span
+			position: absolute
+			top: 50%
+			margin-top: -1.5px
+			width: 38px
+			height: 3px
+			background-color: #666666
+			border-radius: 10px
+			&:before
+				content: ''
+				transform: translateY(-8px)
+				position: absolute
+				top: 50%
+				margin-top: -1.5px
+				width: 38px
+				height: 3px
+				background-color: #666666
+				background-radius: 10px
+			&:after
+				content: ''
+				transform: translateY (8px)
+				position: absolute
+				top: 9px
+				margin-top: -1.5px
+				width: 38px
+				height: 3px
+				background-color: #666666
+				background-radius: 10px
+
+.header
+	&-navbar
+		&__mobile
+			display: none
+
+.button
+	&-green
+		display: none

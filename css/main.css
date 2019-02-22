@@ -169,6 +169,63 @@
   padding-bottom: 10px;
 }
 
+.humburger {
+  cursor: pointer;
+  display: none;
+}
+
+.humburger-wrap {
+  position: relative;
+  width: 38px;
+  width-margin-top: 22px;
+  width-margin-right: 22px;
+  width-display: none;
+}
+
+.humburger-wrap span {
+  position: absolute;
+  top: 50%;
+  margin-top: -1.5px;
+  width: 38px;
+  height: 3px;
+  background-color: #666666;
+  border-radius: 10px;
+}
+
+.humburger-wrap span:before {
+  content: '';
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  position: absolute;
+  top: 50%;
+  margin-top: -1.5px;
+  width: 38px;
+  height: 3px;
+  background-color: #666666;
+  background-radius: 10px;
+}
+
+.humburger-wrap span:after {
+  content: '';
+  -webkit-transform: translateY 8px;
+          transform: translateY 8px;
+  position: absolute;
+  top: 9px;
+  margin-top: -1.5px;
+  width: 38px;
+  height: 3px;
+  background-color: #666666;
+  background-radius: 10px;
+}
+
+.header-navbar__mobile {
+  display: none;
+}
+
+.button-green {
+  display: none;
+}
+
 .slider {
   margin-left: 90px;
   max-width: 420px;
@@ -233,7 +290,13 @@
 }
 
 .home-guidance {
-  text-align: right;
+  text-align: center;
+  margin-left: 103px;
+  color: #666666;
+  font-family: "Arial MT";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 36px;
 }
 
 .home-content {
@@ -756,5 +819,46 @@ body {
 
 .button {
   outline: none !important;
+}
+
+@media only screen and (max-width: 1196px) {
+  .header-box__image img {
+    max-width: 100%;
+  }
+  .header-box__phone a {
+    font-size: 16px;
+  }
+  .header-box__work {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .header-box__phone {
+    display: none;
+  }
+  .header-box__city {
+    display: none;
+  }
+  .header-box__work {
+    display: none;
+  }
+  .header-box__schedule {
+    display: none;
+  }
+  .header-box__btn {
+    display: none;
+  }
+  .humburger {
+    display: block;
+  }
+  .button-green {
+    display: block;
+    width: 165px;
+    height: 27px;
+    border-radius: 4px;
+    background-color: #87bd23;
+    margin-left: 43px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
