@@ -27,11 +27,58 @@
 	.humburger
 		display: block
 	
-	.button
+	.btn
 		&-green
 			display: block
 			width: 165px
 			height: 27px
 			border-radius: 4px
 			background-color: #87bd23
-			margin-left: 43px
+			margin-left: 0px
+			color: #ffffff
+			font-family: "Arial MT"
+			font-size: 16px
+			position: relative
+			padding-left: 40px
+			outline: none !important
+			border: 1px solid #87bd23
+			&:before
+				content: url("../img/header/shopping-cart-white.png")
+				position: absolute
+				left: 36px
+				top: 1.5px
+@media only screen and (max-width: 575px)
+	.btn
+		&-green
+			width: 119px
+			&:before
+				left: 14px
+
+@media only screen and (max-width: 516px)
+	.btn
+		&-green
+			width: 53px
+			margin-left: 40px
+			&:before
+				left: 14px
+			span
+				display: none
+
+@media only screen and (max-width: 400px)
+	.btn
+		&-green
+			margin-left: 0
+
+@media only screen and (max-width: 320px)
+	.header
+		&-box
+			&__image
+				width: 186px
+	.btn
+		&-green
+			margin-left: 30px
+	.humburger
+		margin-left: 10px
+
+
+
