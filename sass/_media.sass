@@ -1,4 +1,4 @@
-@media only screen and (max-width : 1199px)
+@media only screen and (max-width: 1199px)
 	.header
 		&-box
 			&__image
@@ -28,7 +28,7 @@
 					margin-top: 0
 			&__assessment
 				&_vendor
-					margin-left: 70px
+					margin-left: 15px
 			&__title
 				font-size: 24px
 				margin-bottom: 8px
@@ -51,6 +51,16 @@
 		max-height: 100%
 		&-nav
 			display: none
+
+@media only screen and (max-width: 1100px)
+	.button
+		&-blue
+			width: 200px
+			font-size: 15px
+		&-green
+			width: 200px
+			font-size: 15px
+
 
 @media only screen and (max-width: 991px)
 	.header
@@ -96,10 +106,11 @@
 				text-align: left
 				margin-top: 15px
 			&__list
+				margin-top: 14px
 				ul
 					li
 						margin-left: 37px
-						margin-top: 14px
+						margin-top: 0
 						&:before
 							left: -37px
 
@@ -130,6 +141,8 @@
 	.button
 		&-green
 			display: none
+		&-blue
+			width: 277px
 
 	.or
 		&-top
@@ -141,6 +154,13 @@
 
 	.slider
 		margin-top: 25px
+
+	.buy
+		&-one
+			display: none
+		&-two
+			display: block
+			font-size: 24px
 
 @media only screen and (max-width: 767px)
 	.container
@@ -158,6 +178,11 @@
 	.slider
 		margin-top: 15%
 
+@media only screen and (max-width: 646px)
+	.button
+		&-blue
+			width: 260px
+
 @media only screen and (max-width: 635px)
 	.home
 		&-content
@@ -165,9 +190,23 @@
 				&_discount
 					margin-left: 5px
 
+@media only screen and (max-width: 617px)
+	.home
+		&-content
+			&__list
+				li
+					width: 210px
+					line-height: 30px
+
+	.list
+		&-three
+			&:before
+				top: 14px
+			
+
 @media only screen and (max-width: 616px)
 	.slider
-		margin-top: 40%
+		margin-top: 25%
 
 @media only screen and (max-width: 602px)
 	.home
@@ -177,6 +216,11 @@
 				flex-direction: column
 				&_discount
 					margin-left: 0
+
+@media only screen and (max-width: 591px)
+	.button
+		&-blue
+			width: 250px
 
 @media only screen and (max-width: 575px)
 	.btn
@@ -206,10 +250,30 @@
 			&__button
 				display: flex
 				justify-content: center
+			&__list
+				text-align: left
+				margin-top: 17px
+				margin-left: 25px
+				li
+					width: 300px
+					line-height: 35px
+
+	.list
+		&-three
+			&:before
+				top: 5px
 			
 	.or
 		&-top
 			align-items: center
+		&-mobile
+			width: 290px
+			text-align: center
+			margin-top: 18px
+
+	.subtitle
+		&-mobile
+			display: block
 
 @media only screen and (max-width: 516px)
 	.btn

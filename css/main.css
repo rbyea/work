@@ -507,6 +507,14 @@ ul {
   margin-left: 13px;
 }
 
+.buy-two {
+  display: none;
+}
+
+.subtitle-mobile {
+  display: none;
+}
+
 .delivery {
   margin-bottom: 50px;
   padding-top: 49px;
@@ -893,7 +901,7 @@ body {
     margin-top: 0;
   }
   .home-content__assessment_vendor {
-    margin-left: 70px;
+    margin-left: 15px;
   }
   .home-content__title {
     font-size: 24px;
@@ -921,6 +929,17 @@ body {
   }
   .slider-nav {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .button-blue {
+    width: 200px;
+    font-size: 15px;
+  }
+  .button-green {
+    width: 200px;
+    font-size: 15px;
   }
 }
 
@@ -974,9 +993,12 @@ body {
     text-align: left;
     margin-top: 15px;
   }
+  .home-content__list {
+    margin-top: 14px;
+  }
   .home-content__list ul li {
     margin-left: 37px;
-    margin-top: 14px;
+    margin-top: 0;
   }
   .home-content__list ul li:before {
     left: -37px;
@@ -1008,6 +1030,9 @@ body {
   .button-green {
     display: none;
   }
+  .button-blue {
+    width: 277px;
+  }
   .or-top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1028,6 +1053,13 @@ body {
   }
   .slider {
     margin-top: 25px;
+  }
+  .buy-one {
+    display: none;
+  }
+  .buy-two {
+    display: block;
+    font-size: 24px;
   }
 }
 
@@ -1050,15 +1082,31 @@ body {
   }
 }
 
+@media only screen and (max-width: 646px) {
+  .button-blue {
+    width: 260px;
+  }
+}
+
 @media only screen and (max-width: 635px) {
   .home-content__price_discount {
     margin-left: 5px;
   }
 }
 
+@media only screen and (max-width: 617px) {
+  .home-content__list li {
+    width: 210px;
+    line-height: 30px;
+  }
+  .list-three:before {
+    top: 14px;
+  }
+}
+
 @media only screen and (max-width: 616px) {
   .slider {
-    margin-top: 40%;
+    margin-top: 25%;
   }
 }
 
@@ -1074,6 +1122,12 @@ body {
   }
   .home-content__price_discount {
     margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 591px) {
+  .button-blue {
+    width: 250px;
   }
 }
 
@@ -1120,10 +1174,30 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .home-content__list {
+    text-align: left;
+    margin-top: 17px;
+    margin-left: 25px;
+  }
+  .home-content__list li {
+    width: 300px;
+    line-height: 35px;
+  }
+  .list-three:before {
+    top: 5px;
+  }
   .or-top {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .or-mobile {
+    width: 290px;
+    text-align: center;
+    margin-top: 18px;
+  }
+  .subtitle-mobile {
+    display: block;
   }
 }
 
