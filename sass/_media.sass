@@ -292,6 +292,11 @@
 			span
 				display: none
 
+@media only screen and (max-width: 446px)
+	.btn
+		&-green
+			margin-left: 0
+
 @media only screen and (max-width: 400px)
 	.btn
 		&-green
@@ -301,10 +306,12 @@
 	.header
 		&-box
 			&__image
-				width: 186px
+				width: 160px
 	.btn
 		&-green
-			margin-left: 30px
+			margin-left: 15px
+			&:before
+				left: 10px
 	.humburger
 		margin-left: 10px
 
