@@ -1166,6 +1166,14 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .rating-people {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .people-link-two {
+    display: none;
+  }
   .product-content {
     display: -webkit-box;
     display: -ms-flexbox;
