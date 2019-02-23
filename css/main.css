@@ -438,7 +438,6 @@
   border-radius: 4px;
   background-color: #1484c7;
   color: #ffffff;
-  font-family: "Arial MT";
   font-size: 24px;
   line-height: 36px;
   border: none;
@@ -450,11 +449,9 @@
   border-radius: 4px;
   background-color: #87bd23;
   color: #ffffff;
-  font-family: "Arial - Bold MT";
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
-  font-family: Arial;
   padding-right: 48px;
   padding-left: 48px;
   border: none;
@@ -632,7 +629,6 @@ ul {
 
 .product-title {
   color: #333333;
-  font-family: "Arial - Bold MT";
   font-size: 30px;
   font-weight: 400;
   line-height: 28px;
@@ -641,7 +637,6 @@ ul {
 
 .product-subtitle {
   color: #1484c7;
-  font-family: "Arial MT";
   font-size: 23px;
   font-weight: 400;
   line-height: 26px;
@@ -656,7 +651,6 @@ ul {
   color: #333333;
   font-size: 30px;
   line-height: 36px;
-  font-family: "Arial - Bold MT";
   font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -670,7 +664,6 @@ ul {
 
 .product-content__price_cross {
   color: #333333;
-  font-family: "Arial MT";
   font-size: 20px;
   font-weight: 400;
   line-height: 36px;
@@ -686,7 +679,6 @@ ul {
   content: '25%';
   position: absolute;
   color: #333333;
-  font-family: "Arial MT";
   font-size: 16px;
   font-weight: 400;
   line-height: 36px;
@@ -935,6 +927,11 @@ body {
   .button-blue {
     width: 220px;
   }
+  .button-product {
+    background-color: #1484c7;
+    width: 277px;
+    margin-left: 0;
+  }
   .slider {
     margin-left: 0;
     max-width: 100%;
@@ -946,6 +943,19 @@ body {
   .view {
     line-height: 22px;
   }
+  .product-title {
+    font-size: 24px;
+    margin-top: 3%;
+  }
+  .product-subtitle {
+    display: none;
+  }
+  .product-content {
+    margin-top: 29px;
+  }
+  #menu-five {
+    margin-left: 13px;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -956,6 +966,9 @@ body {
   .button-green {
     width: 200px;
     font-size: 15px;
+  }
+  .button-product {
+    width: 277px;
   }
 }
 
@@ -1067,6 +1080,15 @@ body {
   .button-blue {
     width: 277px;
   }
+  .button-product {
+    display: block;
+  }
+  .product-content {
+    margin-top: 11px;
+  }
+  .product-title {
+    margin-top: 0;
+  }
   .or-top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1138,6 +1160,34 @@ body {
   }
   .content-two {
     margin-bottom: 20px;
+  }
+  .rating {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .product-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .product-content__pricer_cross {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 

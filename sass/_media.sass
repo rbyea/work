@@ -44,6 +44,10 @@
 			width: 220px
 		&-blue
 			width: 220px
+		&-product
+			background-color: #1484c7
+			width: 277px
+			margin-left: 0
 
 	.slider
 		margin-left: 0
@@ -55,6 +59,19 @@
 	.view
 		line-height: 22px
 
+	.product
+		&-title
+			font-size: 24px
+			margin-top: 3%
+		&-subtitle
+			display: none
+		&-content
+			margin-top: 29px
+
+	#menu
+		&-five
+			margin-left: 13px
+
 @media only screen and (max-width: 1100px)
 	.button
 		&-blue
@@ -63,6 +80,10 @@
 		&-green
 			width: 200px
 			font-size: 15px
+
+	.button
+		&-product
+			width: 277px
 
 
 @media only screen and (max-width: 991px)
@@ -162,6 +183,14 @@
 			display: none
 		&-blue
 			width: 277px
+		&-product
+			display: block
+
+	.product
+		&-content
+			margin-top: 11px
+		&-title
+			margin-top: 0
 
 	.or
 		&-top
@@ -216,6 +245,19 @@
 		&-two
 			margin-bottom: 20px
 
+	.rating
+		justify-content: center
+
+	.product
+		&-content
+			display: flex
+			justify-content: center
+			flex-direction: column
+			align-items: center
+			&__pricer
+				&_cross
+					display: flex
+					align-items: flex-start
 
 @media only screen and (max-width: 678px)
 	.slider
