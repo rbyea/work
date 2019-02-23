@@ -943,6 +943,9 @@ body {
   .slider-nav {
     display: none;
   }
+  .view {
+    line-height: 22px;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -960,6 +963,20 @@ body {
   .container {
     max-width: none;
     width: 95%;
+  }
+  .content-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .view {
+    line-height: 40px;
+  }
+  .delivery-item {
+    margin-bottom: 20px;
   }
   .header-box__phone {
     display: none;
@@ -1122,9 +1139,6 @@ body {
   .content-two {
     margin-bottom: 20px;
   }
-  #menu-one {
-    text-align: center;
-  }
 }
 
 @media only screen and (max-width: 678px) {
@@ -1286,6 +1300,18 @@ body {
 @media only screen and (max-width: 400px) {
   .btn-green {
     margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 393px) {
+  .view {
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 323px) {
+  .payment {
+    line-height: 20px;
   }
 }
 
