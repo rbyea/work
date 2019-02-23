@@ -63,6 +63,10 @@
 
 
 @media only screen and (max-width: 991px)
+	.container
+		max-width: none
+		width: 95%
+
 	.header
 		&-box
 			&__phone
@@ -161,6 +165,14 @@
 		&-two
 			display: block
 			font-size: 24px
+			
+	.error
+		display: flex
+		justify-content: flex-end
+	
+	.content
+		&-two
+			width: 300px
 
 @media only screen and (max-width: 767px)
 	.container
@@ -173,6 +185,24 @@
 	
 	.slider
 		margin-top: 10px
+
+	.error
+		justify-content: center
+		&-two
+			display: flex
+			justify-content: center
+	
+	.specifications
+		&-content
+			width: 400px
+			margin-bottom: 0
+
+	.content
+		&-two
+			margin-bottom: 20px
+
+	#menu-one
+		text-align: center
 
 @media only screen and (max-width: 678px)
 	.slider
@@ -293,6 +323,14 @@
 				display: none
 
 @media only screen and (max-width: 446px)
+	.specifications
+		&-content
+			ul
+				li
+					br
+						display: block
+
+@media only screen and (max-width: 446px)
 	.btn
 		&-green
 			margin-left: 0
@@ -314,6 +352,14 @@
 				left: 10px
 	.humburger
 		margin-left: 10px
-
-
+	.description
+		&-text
+			margin-bottom: 24px
+	.specifications
+		padding-top: 28px
+		padding-bottom: 28px
+	.equipment
+		&-text
+			&_l
+				margin-bottom: 0
 

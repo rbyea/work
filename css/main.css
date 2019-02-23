@@ -529,7 +529,7 @@ ul {
 }
 
 .delivery-item__title {
-  color: #333;
+  color: #333333;
   line-height: 36px;
 }
 
@@ -546,6 +546,18 @@ ul {
 .delivery-item__title.payment {
   padding-left: 65px;
   background: url("../img/delivery/delivery-item-3.png") no-repeat left center;
+}
+
+.delivery-item__content {
+  color: #666666;
+}
+
+.delivery-item__content a {
+  text-decoration: none;
+}
+
+.delivery-item__content a:hover {
+  border-bottom: 1px solid #1484c7;
 }
 
 .specifications {
@@ -568,6 +580,10 @@ ul {
           justify-content: space-between;
 }
 
+.specifications-content ul li br {
+  display: none;
+}
+
 .specifications-content__list {
   font-size: 16px;
   color: #666666;
@@ -583,7 +599,7 @@ ul {
           flex: 1 0;
   border-bottom: 1px dotted #000;
   height: 1em;
-  margin: 0 .4em;
+  margin: 6px .4em;
 }
 
 .description-text {
@@ -941,6 +957,10 @@ body {
 }
 
 @media only screen and (max-width: 991px) {
+  .container {
+    max-width: none;
+    width: 95%;
+  }
   .header-box__phone {
     display: none;
   }
@@ -1058,6 +1078,17 @@ body {
     display: block;
     font-size: 24px;
   }
+  .error {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .content-two {
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1070,6 +1101,29 @@ body {
   }
   .slider {
     margin-top: 10px;
+  }
+  .error {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .error-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .specifications-content {
+    width: 400px;
+    margin-bottom: 0;
+  }
+  .content-two {
+    margin-bottom: 20px;
+  }
+  #menu-one {
+    text-align: center;
   }
 }
 
@@ -1218,6 +1272,12 @@ body {
 }
 
 @media only screen and (max-width: 446px) {
+  .specifications-content ul li br {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 446px) {
   .btn-green {
     margin-left: 0;
   }
@@ -1241,6 +1301,16 @@ body {
   }
   .humburger {
     margin-left: 10px;
+  }
+  .description-text {
+    margin-bottom: 24px;
+  }
+  .specifications {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  .equipment-text_l {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
