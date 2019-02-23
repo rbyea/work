@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="css/main.css">
   <title>Магазин</title>
@@ -111,7 +112,14 @@
   <section class="home">
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-12">
+          <h2 class="home-content__mobile">
+            Название продукта такое название ага
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-5 col-md-6 col-sm-6 col-12">
           <div class="home-list">
             <a class="home-list__close" href="#">Главно</a>
             <a href="#">Каталог</a>
@@ -119,25 +127,25 @@
           </div>
           <div class="slider-nav">
             <div class="slider-nav__item"><img src="img/slider/photo-slider.png" alt="slider"></div>
-						<div class="slider-nav__item"><img src="img/slider/photo-slider-2.png" alt="slider"></div>
-						<div class="slider-nav__item"><img src="img/slider/photo-slider.png" alt="slider"></div>
-						<div class="slider-nav__item"><img src="img/slider/photo-slider-2.png" alt="slider"></div>
+            <div class="slider-nav__item"><img src="img/slider/photo-slider-2.png" alt="slider"></div>
+            <div class="slider-nav__item"><img src="img/slider/photo-slider.png" alt="slider"></div>
+            <div class="slider-nav__item"><img src="img/slider/photo-slider-2.png" alt="slider"></div>
           </div>
           <div class="slider">
             <img class="slider__item zoom" src="img/slider/photo-slider.png" alt="фото товара">
 
-						<img class="slider__item zoom" src="img/slider/photo-slider-2.png" alt="фото товара">
+            <img class="slider__item zoom" src="img/slider/photo-slider-2.png" alt="фото товара">
 
-						<img class="slider__item zoom" src="img/slider/photo-slider.png" alt="фото товара">
+            <img class="slider__item zoom" src="img/slider/photo-slider.png" alt="фото товара">
 
-						<img class="slider__item zoom" src="img/slider/photo-slider-2.png" alt="фото товара">
-						
+            <img class="slider__item zoom" src="img/slider/photo-slider-2.png" alt="фото товара">
+
           </div>
           <div class="home-guidance">
             Наведите на изображение чтобы увеличить его
           </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-xl-7 col-md-6 col-sm-6 col-12">
           <div class="home-content">
             <h2 class="home-content__title">Название продукта такое название ага</h2>
             <div class="home-content__assessment">
@@ -160,30 +168,35 @@
             <div class="home-content__subtitle">
               Ваша ваша ваша ваша ваша ваша ваша ваша ваша!
             </div>
-            <div class="home-content__list">
-              <ul>
-                <li class="list-one">В наличии 6 штук</li>
-                <li class="list-two">30 дней на возврат</li>
-                <li class="list-three">Доставка в любой регион России</li>
-              </ul>
-            </div>
-            <div class="home-content__price-cross">
-              14590 руб.
-            </div>
-            <div class="home-content__price">
-              10950 руб.
-              <div class="home-content__price_discount">
-                <img src="img/slider/discount.png" alt="discount">
+            <div class="or-top">
+              <div class="home-content__list">
+                <ul>
+                  <li class="list-one">В наличии 6 штук</li>
+                  <li class="list-two">30 дней на возврат</li>
+                  <li class="list-three">Доставка в любой регион России</li>
+                </ul>
+              </div>
+              <div class="or-inside">
+                <div class="home-content__price-cross">
+                  14590 руб.
+                </div>
+                <div class="home-content__price">
+                  10950 руб.
+                  <div class="home-content__price_discount">
+                    <img src="img/slider/discount.png" alt="discount">
+                  </div>
+                </div>
+                <div class="home-content__button">
+                  <div class="home-content__button_blue">
+                    <button class="button button-blue">Купить сейчас</button>
+                  </div>
+                  <div class="home-content__button_green">
+                    <button class="button button-green">В корзине 1шт. Перейти</button>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="home-content__button">
-              <div class="home-content__button_blue">
-                <button class="button button-blue">Купить сейчас</button>
-              </div>
-              <div class="home-content__button_green">
-                <button class="button button-green">В корзине 1шт. Перейти</button>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
@@ -609,10 +622,10 @@
       </div>
     </div>
   </footer>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="js/jquery-migrate-3.0.0.min.js"></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/zoomsl-3.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.0.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/zoomsl-3.0.min.js"></script>
   <script src="js/js.js"></script>
 </body>
 

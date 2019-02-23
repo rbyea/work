@@ -89,6 +89,7 @@ anchors.forEach(function (item) {
 	});
 });
 
+// вызов бургера
 $(document).ready(function () {
 	$('#humburger-btn').on('click', function () {
 		$('#header-menu__mob').toggleClass('mobile-menu__visible');

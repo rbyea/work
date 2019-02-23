@@ -14,6 +14,43 @@
 				ul
 					li
 						margin-right: 20px
+	.home
+		&-guidance
+			display: none
+		&-content
+			&__button
+				margin-top: 10px
+				text-align: center
+			&__subtitle
+				margin-top: 5px
+			&__price
+				&-cross
+					margin-top: 0
+			&__assessment
+				&_vendor
+					margin-left: 70px
+			&__title
+				font-size: 24px
+				margin-bottom: 8px
+			&__button
+				display: flex
+		&-list
+			a
+				margin-left: 15px
+
+	.button
+		&-green
+			margin-left: 20px
+			width: 220px
+		&-blue
+			width: 220px
+
+	.slider
+		margin-left: 0
+		max-width: 100%
+		max-height: 100%
+		&-nav
+			display: none
 
 @media only screen and (max-width: 991px)
 	.header
@@ -30,6 +67,41 @@
 				display: none
 		&-navbar
 			display: none
+
+	.home
+		&-guidance
+			font-size: 13px
+		&-list
+			display: none
+		&-content
+			&__title
+				display: none
+			&__mobile
+				display: block
+				color: #333333
+				font-family: "Arial - Bold MT"
+				font-size: 24px
+				font-weight: 400
+				line-height: 24px
+			&__assessment
+				&_vendor
+					display: none
+				&_rating
+					&-text
+						margin-left: 13px
+			&__subtitle
+				line-height: 24px
+				font-size: 22px
+			&__button
+				text-align: left
+				margin-top: 15px
+			&__list
+				ul
+					li
+						margin-left: 37px
+						margin-top: 14px
+						&:before
+							left: -37px
 
 	.humburger
 		display: block
@@ -54,12 +126,90 @@
 				position: absolute
 				left: 36px
 				top: 1.5px
+
+	.button
+		&-green
+			display: none
+
+	.or
+		&-top
+			display: flex
+			flex-direction: column-reverse
+		&-insode
+			display: flex
+			flex-direction: column-reverse
+
+	.slider
+		margin-top: 25px
+
+@media only screen and (max-width: 767px)
+	.container
+		max-width: none
+		width: 95% 
+	
+	.home
+		&-content
+			margin-left: 0
+	
+	.slider
+		margin-top: 10px
+
+@media only screen and (max-width: 678px)
+	.slider
+		margin-top: 15%
+
+@media only screen and (max-width: 635px)
+	.home
+		&-content
+			&__price
+				&_discount
+					margin-left: 5px
+
+@media only screen and (max-width: 616px)
+	.slider
+		margin-top: 40%
+
+@media only screen and (max-width: 602px)
+	.home
+		&-content
+			&__price
+				display: flex
+				flex-direction: column
+				&_discount
+					margin-left: 0
+
 @media only screen and (max-width: 575px)
 	.btn
 		&-green
 			width: 119px
 			&:before
 				left: 14px
+
+	.slider
+		margin-top: 10px
+		max-width: 300px
+		margin: 0 auto
+		
+	.home
+		&-content
+			&__subtitle
+				display: none
+			&__assessment
+				justify-content: center
+			&__mobile
+				text-align: center
+			&__price
+				display: flex
+				flex-direction: row
+				&_discount
+					margin-left: 20px
+			&__button
+				display: flex
+				justify-content: center
+			
+	.or
+		&-top
+			align-items: center
 
 @media only screen and (max-width: 516px)
 	.btn
