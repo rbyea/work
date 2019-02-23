@@ -72,6 +72,22 @@
 		&-five
 			margin-left: 13px
 
+	.footer
+		&-content
+			&__image
+				margin-bottom: 8px
+			&__mobile
+				display: block
+				margin-bottom: 2px
+			&__text
+				&_l
+					line-height: 16px
+			&__box
+				margin-bottom: 14px
+	
+	.none
+		display: none
+
 @media only screen and (max-width: 1100px)
 	.button
 		&-blue
@@ -218,6 +234,27 @@
 		&-two
 			width: 300px
 
+@media only screen and (max-width: 885px)
+	.footer
+		&-content
+			&__box
+				&_time
+					font-size: 16px
+				&_text
+					font-size: 14px
+				&_phone
+					font-size: 16px
+				&_email
+					font-size: 16px
+
+@media only screen and (max-width: 871px)
+	.footer
+		&-content
+			&__image
+				img
+					width: 210px
+
+
 @media only screen and (max-width: 767px)
 	.container
 		max-width: none
@@ -265,6 +302,15 @@
 				&_cross
 					display: flex
 					align-items: flex-start
+
+	.footer
+		&-h
+			text-align: center
+			display: flex
+			justify-content: center
+			margin-bottom: 10px
+		&-l
+			text-align: right
 
 @media only screen and (max-width: 678px)
 	.slider
@@ -366,6 +412,21 @@
 	.subtitle
 		&-mobile
 			display: block
+
+	.footer
+		&-h
+			margin-bottom: 15px
+		&-m
+			display: flex
+			justify-content: center
+			text-align: center
+			margin-bottom: 15px
+		&-l
+			display: flex
+			justify-content: center
+			text-align: center
+			margin-bottom: 15px
+			
 
 @media only screen and (max-width: 516px)
 	.home

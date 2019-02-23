@@ -777,20 +777,22 @@ ul {
   background-color: #f6f6f6;
 }
 
+.footer-content__mobile {
+  display: none;
+}
+
 .footer-content__image {
   margin-bottom: 62px;
 }
 
 .footer-content__text {
   color: #666666;
-  font-family: "Arial MT";
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
 }
 
 .footer-content__list ul li {
-  font-family: "Arial MT";
   font-size: 15px;
   line-height: 23px;
 }
@@ -955,6 +957,22 @@ body {
   }
   #menu-five {
     margin-left: 13px;
+  }
+  .footer-content__image {
+    margin-bottom: 8px;
+  }
+  .footer-content__mobile {
+    display: block;
+    margin-bottom: 2px;
+  }
+  .footer-content__text_l {
+    line-height: 16px;
+  }
+  .footer-content__box {
+    margin-bottom: 14px;
+  }
+  .none {
+    display: none;
   }
 }
 
@@ -1130,6 +1148,27 @@ body {
   }
 }
 
+@media only screen and (max-width: 885px) {
+  .footer-content__box_time {
+    font-size: 16px;
+  }
+  .footer-content__box_text {
+    font-size: 14px;
+  }
+  .footer-content__box_phone {
+    font-size: 16px;
+  }
+  .footer-content__box_email {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 871px) {
+  .footer-content__image img {
+    width: 210px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .container {
     max-width: none;
@@ -1196,6 +1235,19 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .footer-h {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  .footer-l {
+    text-align: right;
   }
 }
 
@@ -1321,6 +1373,29 @@ body {
   }
   .subtitle-mobile {
     display: block;
+  }
+  .footer-h {
+    margin-bottom: 15px;
+  }
+  .footer-m {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .footer-l {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
   }
 }
 
