@@ -88,6 +88,8 @@ $(document).ready(function(){
 	//	$('.modal-slider').css('display', 'block');
 //	}//;`
 
+//прилипающеее меню
+	var sticky = new Sticky('.sticky');
 
 }); // end jquery
 
