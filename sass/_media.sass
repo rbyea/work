@@ -254,6 +254,19 @@
 				img
 					width: 210px
 
+@media only screen and (max-width: 841px)
+	.footer
+		&-content
+			&__image
+				margin-bottom: 22px
+			&__mobile
+				margin-bottom: 11px
+
+@media only screen and (max-width: 781px)
+	.footer
+		&-content
+			&__mobile
+				margin-bottom: 40px
 
 @media only screen and (max-width: 767px)
 	.container
@@ -311,6 +324,12 @@
 			margin-bottom: 10px
 		&-l
 			text-align: right
+		&-content
+			&__image
+				margin-bottom: 16px
+				margin-top: 10px
+			&__mobile
+				margin-bottom: 20px
 
 @media only screen and (max-width: 678px)
 	.slider
@@ -426,6 +445,13 @@
 			justify-content: center
 			text-align: center
 			margin-bottom: 15px
+		&-content
+			&__image
+				display: none
+		
+	.image
+		&-footer
+			display: block
 			
 
 @media only screen and (max-width: 516px)
