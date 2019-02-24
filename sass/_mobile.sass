@@ -45,5 +45,41 @@
 .mobile
 	&-menu
 		&__visible
-			display: block
+			display: flex
 			position: fixed
+			top: 0
+			right: 0
+			justify-content: flex-end
+.header
+	&-navbar
+		&__mobile
+			width: 100%
+			height: 100vh
+			background: rgba(0, 0, 0, 0.7)
+			z-index: 99
+			transition: all 0.9s
+			&_window
+				&-close
+					position: absolute
+					right: 20px
+					top: 20px
+				&-content
+					ul
+						padding: 70px 50px 0 0
+						li
+							font-size: 16px
+							padding: 10px
+							width: 250px
+							a
+								color: #333333
+								&:hover
+									text-decoration: none
+									border-bottom: 1px solid #333333
+
+.header-navber__mobile_window
+	width: 35%
+	background-color: #cccccc
+	text-align: right
+	display: flex
+	justify-content: flex-end
+	border-radius: 5px
