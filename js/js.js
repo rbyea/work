@@ -104,3 +104,13 @@ anchors.forEach(function (item) {
 		}, animationTime / framesCount);
 	});
 });
+
+// вызов бургера
+$(document).ready(function () {
+	$('#humburger-btn').on('click', function () {
+		$('#header-menu__mob').toggleClass('mobile-menu__visible');
+	});
+	$('.header-menu__close').on('click', function () {
+		$('#header-menu__mob').toggleClass('mobile-menu__visible');
+	});
+});
