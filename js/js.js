@@ -110,7 +110,7 @@ $(document).ready(function () {
 	$('#humburger-btn').on('click', function () {
 		$('#header-menu__mob').toggleClass('mobile-menu__visible');
 	});
-	$('.header-menu__close').on('click', function () {
+	$('.header-navbar__mobile_window-close').on('click', function () {
 		$('#header-menu__mob').toggleClass('mobile-menu__visible');
 	});
 });
