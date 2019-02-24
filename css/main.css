@@ -33,15 +33,6 @@
           transform: translateY(100px);
 }
 
-.modal-slider .magnifier {
-  -webkit-transform: none;
-          transform: none;
-}
-
-.cursorshade {
-  pointer-events: none;
-}
-
 .arrow {
   position: absolute;
   top: 50%;
@@ -69,6 +60,10 @@
   color: #666666;
   font-size: 20px;
   z-index: 99;
+}
+
+.hidden {
+  display: none;
 }
 
 .modal-slider {
@@ -104,6 +99,10 @@
   font-size: 30px;
   z-index: 99;
   cursor: pointer;
+}
+
+.modal-slider_show {
+  display: block;
 }
 
 .header {
@@ -265,7 +264,7 @@
   width: 38px;
   height: 3px;
   background-color: #666666;
-  background-radius: 10px;
+  border-radius: 10px;
 }
 
 .humburger-wrap span:after {
@@ -278,7 +277,7 @@
   width: 38px;
   height: 3px;
   background-color: #666666;
-  background-radius: 10px;
+  border-radius: 10px;
 }
 
 .header-navbar__mobile {
