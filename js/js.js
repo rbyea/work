@@ -91,6 +91,10 @@ $(document).ready(function(){
 //прилипающеее меню
 	var sticky = new Sticky('.sticky');
 
+	$(".warning-close").hide();
+
+	$('.warning').fadeOut().delay(3000).fadeIn();
+
 }); // end jquery
 
 //rating js
