@@ -577,7 +577,7 @@
         </div>
       </div>
 
-      <div class="row hidden" data-hide="1">
+      <div class="row hidden" style="display:none;" data-hide="1">
         <div class="col-md-2">
           <div class="people-box">
             <div class="rating rating-people">
@@ -833,10 +833,18 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/zoomsl-3.0.min.js"></script>
   <script src="js/sticky.min.js"></script>
   <script src="js/js.js"></script>
+  <script>
+  	var activeStep = 3;
+      $(".people-link").click(function () {
+        $('.hidden').eq(activeStep++).show();
+        if (activeStep == $('.hiden').length) $(this).hide();
+      });
+  </script>
 
 </body>
 

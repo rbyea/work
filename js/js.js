@@ -91,7 +91,7 @@ $(document).ready(function(){
 //прилипающеее меню
 	var sticky = new Sticky('.sticky');
 
-//всплывающее меню, через 1 минуту
+//всплывающее описание, через 1 минуту
 	$(".warning-close").hide();
 
 	$('.warning').fadeOut().delay(60000).fadeIn();
@@ -148,13 +148,13 @@ $(document).ready(function () {
 	});
 
 // показать скрыть отзывы
-$('.people-link__more').click(function(e){
-	e.preventDefault;
-	for (i=1; i<=2; i++) {
-		$('.people .container').find('.row.hidden').removeClass('hidden');
-		return;
-	}
-	
+	// $('.people-link__more').click(function(e){
+	// 	e.preventDefault;
+	// 	for (i=1; i<=2; i++) {
+	// 		$('.people .container').find('.row.hidden').removeClass('hidden');
+	// 		return;
+	// 	}
+		
 
 	/*
 		console.log($('.people-link__more').text());
@@ -171,4 +171,3 @@ $('.people-link__more').click(function(e){
 	*/
 });
 
-});

@@ -869,7 +869,6 @@ ul {
 }
 
 .people-link {
-  font-family: "Arial MT";
   font-size: 16px;
   line-height: 24px;
   text-decoration: underline;
@@ -880,7 +879,6 @@ ul {
 }
 
 .people-link-two {
-  font-family: "Arial MT";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -897,7 +895,6 @@ ul {
 
 .people-content__title {
   color: #1484c7;
-  font-family: "Arial MT";
   font-size: 22px;
   font-weight: 400;
   line-height: 24px;
@@ -910,7 +907,6 @@ ul {
 
 .people-content__subtitle {
   color: #ffcc33;
-  font-family: "Arial MT";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
