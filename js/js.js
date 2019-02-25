@@ -13,11 +13,6 @@
 	
 $(document).ready(function(){
 
-	$('window').on('click', function(event){
-    event.stopImmediatePropagation();
-		//console.log(event);
-	});
-
 	$(".zoom").imagezoomsl({
 		zoomrange: [2.12, 12],
 		magnifiersize: [530, 340],
@@ -77,12 +72,14 @@ $(document).ready(function(){
 	
 	
 	// modals
-	$('.tracker').on('click', function(){
-		$('.modal-slider').addClass('modal-slider_show');
-	});
-	$('.modal-slider__close').on('click', function(){
-		$('.modal-slider').removeClass('modal-slider_show');
-	});
+	$(document).on('click', '.tracker', function(){
+			$('.modal-slider').addClass('modal-slider_show');
+		});
+		$('.modal-slider__close').on('click', function(){
+			$('.modal-slider').removeClass('modal-slider_show');
+		});
+
+	
 	//$('.home .slider .slider-item').on('click', function(){
 		//console.log('click');
 	//	$('.modal-slider').css('display', 'block');
