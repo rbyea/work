@@ -105,6 +105,15 @@
   display: block;
 }
 
+img.slider__item.slick-slide {
+  width: 420px;
+}
+
+.slider-index {
+  width: 420px;
+  z-index: 10000;
+}
+
 .header {
   padding-top: 10px;
 }
