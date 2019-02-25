@@ -34,6 +34,26 @@ $(document).ready(function(){
 		arrows: false
 	});
 
+	$('.slider-two').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.slider-nav-two',
+		nextArrow: '<div class="arrow arrow_right"><i class="fas fa-chevron-right"></i></div>',
+		prevArrow: '<div class="arrow arrow_left"><i class="fas fa-chevron-left"></i></div>'
+	});
+
+	$('.slider-nav-two').slick({
+			slidesToShow: 3,
+			slidesToScroll: false,
+			asNavFor: '.slider-two',
+			centerPadding: 0,
+			centerMode: true,
+			focusOnSelect: true,
+			arrows: false
+		});
+
 	$('.slider').on('afterChange', function(event, slick, currentSlide) {
 		$('.slider-nav').slick('slickGoTo', currentSlide);
 		
