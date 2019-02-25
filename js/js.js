@@ -78,10 +78,10 @@ $(document).ready(function(){
 	
 	// modals
 	$('.tracker').on('click', function(){
-		$('.modal-slider').css('display', 'block');
+		$('.modal-slider').addClass('modal-slider_show');
 	});
 	$('.modal-slider__close').on('click', function(){
-		$('.modal-slider').css('display', 'none');
+		$('.modal-slider').removeClass('modal-slider_show');
 	});
 	//$('.home .slider .slider-item').on('click', function(){
 		//console.log('click');
@@ -136,8 +136,6 @@ anchors.forEach(function (item) {
 		}, animationTime / framesCount);
 	});
 });
-
-// вызов бургера
 $(document).ready(function () {
 
 	// вызов бургера
@@ -150,8 +148,17 @@ $(document).ready(function () {
 	});
 
 // показать скрыть отзывы
-$('.people-link a').click(function(){
-	if( $('.people-link a').text() == 'Показать еще отзывы' ){
+$('.people-link__more').click(function(e){
+	e.preventDefault;
+	for (i=1; i<=2; i++) {
+		$('.people .container').find('.row.hidden').removeClass('hidden');
+		return;
+	}
+	
+
+	/*
+		console.log($('.people-link__more').text());
+	if( $('.people-link__more').text() == 'показать еще отзывы' ){
 			console.log(1);
 			$(this).prev().children().removeClass('hidden');
 			$(this).children().text('Скрыть отзывы');
@@ -161,6 +168,7 @@ $('.people-link a').click(function(){
 			$(this).children().text('Показать еще отзывы');
 	}
 	return false;
+	*/
 });
 
 });
