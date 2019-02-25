@@ -69,6 +69,7 @@
 .modal-slider {
   display: none;
   position: relative;
+  z-index: 100000;
 }
 
 .modal-slider__container {
@@ -112,6 +113,10 @@ img.slider__item.slick-slide {
 .slider-index {
   width: 420px;
   z-index: 10000;
+}
+
+.slider-nav.slider-nav-two {
+  visibility: hidden;
 }
 
 .header {
