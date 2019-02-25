@@ -428,6 +428,10 @@ img.slider__item.slick-slide {
   border-radius: 5px;
 }
 
+.header-mobile {
+  z-index: 100;
+}
+
 .slider {
   margin-left: 90px;
   max-width: 420px;
@@ -1063,7 +1067,7 @@ body {
     font-size: 16px;
   }
   .header-navbar__list ul li {
-    margin-right: 20px;
+    margin-right: 17px;
   }
   .home-guidance {
     display: none;
@@ -1180,6 +1184,9 @@ body {
   .delivery-item {
     margin-bottom: 20px;
   }
+  .header {
+    background-color: #fff;
+  }
   .header-box__phone {
     display: none;
   }
@@ -1197,6 +1204,9 @@ body {
   }
   .header-navbar {
     display: none;
+  }
+  .home {
+    padding-top: 80px;
   }
   .home-guidance {
     font-size: 13px;

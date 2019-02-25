@@ -84,6 +84,9 @@ $(document).ready(function(){
 //прилипающеее меню
 	var sticky = new Sticky('.sticky');
 
+//прилипающее меню на планшетах и телефонах
+	var sticky = new Sticky('.header-mobile');
+
 //всплывающее описание, через 1 минуту
 	$(".warning-close").hide();
 
@@ -152,3 +155,24 @@ $(document).ready(function () {
 
 }); // end jquery
 
+//добавление класса на 991px
+$(document).ready(function () {
+	function checkWidth() {
+		var windowWidth = $('body').innerWidth(),
+			elem = $(".header");
+		if (windowWidth < 991) {
+			elem.removeClass('header-mob');
+			elem.addClass('header-mobile');
+		}
+		else {
+			elem.removeClass('header-mobile');
+			elem.addClass('header-mob');
+		}
+	}
+
+	checkWidth();
+
+	$(window).resize(function () {
+		checkWidth();
+	});
+});
