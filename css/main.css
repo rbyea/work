@@ -126,7 +126,6 @@
 
 .header-box__city a {
   color: #666666;
-  font-family: "Arial MT";
   font-size: 16px;
   font-weight: 400;
   line-height: 36px;
@@ -153,7 +152,6 @@
 
 .header-box__schedule {
   color: #666666;
-  font-family: "Arial MT";
   font-size: 16px;
   font-weight: 400;
   line-height: 36px;
@@ -184,7 +182,6 @@
 
 .header-navbar__list ul li {
   margin-right: 35px;
-  font-family: "Arial MT";
   font-size: 16px;
   font-weight: 400;
   line-height: 36px;
@@ -472,7 +469,6 @@
 
 .home-list {
   color: #666666;
-  font-family: "Arial MT";
   font-size: 14px;
 }
 
@@ -503,7 +499,6 @@
   text-align: center;
   margin-left: 103px;
   color: #666666;
-  font-family: "Arial MT";
   font-size: 14px;
   font-weight: 400;
   line-height: 36px;
@@ -537,7 +532,6 @@
   font-size: 30px;
   font-weight: 400;
   line-height: 36px;
-  font-family: "Arial - Bold MT";
   font-weight: 700;
   margin-top: -6px;
   display: -webkit-box;
@@ -562,7 +556,6 @@
 
 .home-content__price-cross {
   color: #333333;
-  font-family: "Arial MT";
   font-size: 20px;
   font-weight: 400;
   line-height: 36px;
@@ -574,7 +567,6 @@
   margin-left: 65px;
   padding: -3px;
   color: #666666;
-  font-family: "Arial MT";
   font-size: 16px;
   font-weight: 400;
   line-height: 36px;
@@ -583,7 +575,6 @@
 .home-content__subtitle {
   margin-top: 18px;
   color: #1484c7;
-  font-family: "Arial MT";
   font-size: 23px;
   font-weight: 400;
   line-height: 36px;
@@ -830,7 +821,6 @@ ul {
 }
 
 .product-content__price span {
-  font-family: Arial;
   font-weight: 400;
 }
 
