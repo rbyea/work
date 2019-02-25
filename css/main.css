@@ -62,7 +62,7 @@
   z-index: 99;
 }
 
-.hidden {
+.feedback-hidden {
   display: none;
 }
 
@@ -113,10 +113,6 @@ img.slider__item.slick-slide {
 .slider-index {
   width: 420px;
   z-index: 10000;
-}
-
-.slider-nav.slider-nav-two {
-  visibility: hidden;
 }
 
 .header {
@@ -879,6 +875,7 @@ ul {
 }
 
 .people-link a {
+  cursor: pointer;
   color: #666666;
 }
 
@@ -1243,6 +1240,9 @@ body {
   }
   .home-content__list ul li:before {
     left: -37px;
+  }
+  .magnifer {
+    display: none;
   }
   .humburger {
     display: block;

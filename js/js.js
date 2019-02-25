@@ -34,6 +34,7 @@ $(document).ready(function(){
 		arrows: false
 	});
 
+	// измененение слайдов по ховеру
 	$('.slider').on('afterChange', function(event, slick, currentSlide) {
 		$('.slider-nav').slick('slickGoTo', currentSlide);
 		
@@ -50,7 +51,24 @@ $(document).ready(function(){
 		$('.slider').slick('slickGoTo', goToSingleSlide);
 	});
 
-	// измененение слайдов по ховеру
+	// переопределяем zoom на мобилках
+
+	$( window ).resize(function(){
+		var windowWidth = $( window ).width();
+		if (windowWidth <= 992) {
+			$('.magnifer').css('display' , 'none');
+			$(".zoom").imagezoomsl({
+				zoomrange: [1, 1],
+				zoomstart: 1,
+				innerzoom: true,
+				magnifierborder: "none"
+			});
+
+		} else {
+			$('.magnifer').css('display' , 'block');
+		}
+
+	});
 	
 	
 	// modals
@@ -145,15 +163,49 @@ $(document).ready(function () {
 		$('#header-menu__mob').toggleClass('mobile-menu__visible');
 	});
 
-// показать скрыть отзывы
-	$('.people-link__more').click(function () {
-			var feedbackAdd = $('people').find('.row.hidden');
-			//console.log(i);
-			for (i= 0; i <= 2; i++) {
-			feedbackAdd.eq(i).removeClass('hidden');
-			return true;
-			}
-	});
-
 }); // end jquery
 
+// показать скрыть отзывы
+// Функция открытия комментов
+function toggleFeedback(feedbackAdd){
+	for(let i = 0; i <= 2; i++){ // по 3
+		if(feedbackAdd[i].classList.contains('feedback-hidden')){ //Если есть класс невидимки
+			feedbackAdd[i].classList.remove('feedback-hidden'); // То просто убираем его
+		}
+	}
+}
+//Функция закрытия
+function closeFeedback(feedbackAdd){ 
+		for(let i = 3; i < feedbackAdd.length; i++){ //Начинаем с 3-его элемента
+			feedbackAdd[i].classList.add('feedback-hidden'); // Добавляем класс невидимку
+		}
+}
+//Кнопка 'Показать еще отзывы'
+let btnMain = document.querySelector('.people-link__more');
+//Проверка текст контента
+function checkFeedback(){
+	let feedbackAdd = document.querySelectorAll('.feedback-hidden'); //Собираем массив из невидимок
+	if(feedbackAdd.length == 0){ //Если их 0, то текст = скрыть
+		btnMain.textContent = 'Скрыть';
+	} else {
+		btnMain.textContent = 'Показать еще отзывы';
+	}
+}
+setInterval(checkFeedback, 10); // Поставим небольшую задержку
+
+// При нажатии на кнопку
+document.body.addEventListener('click' , function (e) {
+	let target = e.target;
+	if(target == btnMain){
+		// Перезаписываем массив
+		let feedbackAdd = document.querySelectorAll('.feedback-hidden');
+		// Если еще остались скрытые элементы, то выполняем функцию открытия
+		if(feedbackAdd.length != 0){ 
+			toggleFeedback(feedbackAdd);
+		}
+	} //Но если при клике куда угодно мы обнаружим, что наша кнопка должна скрывать, то собираем массив из всех комментов 
+	if(target == btnMain && btnMain.textContent == 'Скрыть'){
+		let feedbackAdd = document.querySelectorAll('.feedback');
+		closeFeedback(feedbackAdd);// И вызываем функцию скрытия
+	}
+});
