@@ -90,7 +90,8 @@ $(document).ready(function(){
 
 //прилипающеее меню
 	var sticky = new Sticky('.sticky');
-
+	
+//всплывающее меню, через 1 минуту
 	$(".warning-close").hide();
 
 	$('.warning').fadeOut().delay(3000).fadeIn();
