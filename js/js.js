@@ -1,16 +1,3 @@
-	
-	//$(window).click(e=> console.log(e.target));
-	
-
-	/*
-		$(".zoom-modal").imagezoomsl({
-		zoomrange: [1, 5],
-		zoomstart: 2,
-		innerzoom: true,
-		magnifierborder: "none"		 
- 	});
-	*/
-	
 $(document).ready(function(){
 
 	$(".zoom").imagezoomsl({
@@ -19,7 +6,7 @@ $(document).ready(function(){
 		scrollspeedanimate: 10,
 		loopspeedanimate: 5,
 		cursorshadeborder: "10px solid black",
-		magnifiereffectanimate: "slideIn"
+		magnifiereffectanimate: "fadeIn"
 	});
 
 	// slider
@@ -62,11 +49,6 @@ $(document).ready(function(){
  
 		$('.slider').slick('slickGoTo', goToSingleSlide);
 	});
-		/*
-		nextArrow: '<div class="arrow-nav arrow-nav_right"><i class="fas fa-chevron-down"></i></div>',
-		prevArrow: '<div class="arrow-nav arrow-nav_left"><i class="fas fa-chevron-top"></i></div>'
-		*/
-
 
 	// измененение слайдов по ховеру
 	
@@ -78,12 +60,6 @@ $(document).ready(function(){
 		$('.modal-slider__close').on('click', function(){
 			$('.modal-slider').removeClass('modal-slider_show');
 		});
-
-	
-	//$('.home .slider .slider-item').on('click', function(){
-		//console.log('click');
-	//	$('.modal-slider').css('display', 'block');
-//	}//;`
 
 //прилипающеее меню
 	var sticky = new Sticky('.sticky');
@@ -145,26 +121,14 @@ $(document).ready(function () {
 	});
 
 // показать скрыть отзывы
-	// $('.people-link__more').click(function(e){
-	// 	e.preventDefault;
-	// 	for (i=1; i<=2; i++) {
-	// 		$('.people .container').find('.row.hidden').removeClass('hidden');
-	// 		return;
-	// 	}
-		
+	$('.people-link__more').click(function () {
+			var feedbackAdd = $('people').find('.row.hidden');
+			//console.log(i);
+			for (i= 0; i <= 2; i++) {
+			feedbackAdd.eq(i).removeClass('hidden');
+			return true;
+			}
+	});
 
-	/*
-		console.log($('.people-link__more').text());
-	if( $('.people-link__more').text() == 'показать еще отзывы' ){
-			console.log(1);
-			$(this).prev().children().removeClass('hidden');
-			$(this).children().text('Скрыть отзывы');
-	}else{
-		console.log(2);
-			$(this).prev().find( $('.row[data-hide]') ).addClass('hidden');
-			$(this).children().text('Показать еще отзывы');
-	}
-	return false;
-	*/
-});
+}); // end jquery
 

@@ -243,7 +243,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 id="menu-one" href="#menu-one">Характеристики</h2>
+          <h2 class="section-title" id="menu-one" href="#menu-one">Характеристики</h2>
         </div>
       </div>
       <div class="row">
@@ -327,7 +327,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h2 id="menu-two" class="description">
+          <h2 class="section-title" id="menu-two" class="description">
             Описание
           </h2>
         </div>
@@ -352,7 +352,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h2 id="menu-three" class="equipment">
+          <h2 class="section-title" id="menu-three" class="equipment">
             Комплектация
           </h2>
         </div>
@@ -577,7 +577,7 @@
         </div>
       </div>
 
-      <div class="row hidden" style="display:none;" data-hide="1">
+      <div class="row hidden feedback-hidden">
         <div class="col-md-2">
           <div class="people-box">
             <div class="rating rating-people">
@@ -609,7 +609,7 @@
         </div>
       </div> <!-- /people-box -->
 
-      <div class="row hidden" data-hide="1">
+      <div class="row hidden feedback-hidden">
         <div class="col-md-2">
           <div class="people-box">
             <div class="rating rating-people">
@@ -641,7 +641,7 @@
         </div>
       </div> <!-- / peple-box -->
 
-      <div class="row hidden" data-hide="1">
+      <div class="row hidden feedback-hidden">
         <div class="col-md-2">
           <div class="people-box">
             <div class="rating rating-people">
@@ -673,7 +673,7 @@
         </div>
       </div> <!-- / peple-box -->
 
-      <div class="row hidden" data-hide="1">
+      <div class="row hidden feedback-hidden">
         <div class="col-md-2">
           <div class="people-box">
             <div class="rating rating-people">
@@ -708,7 +708,7 @@
       <div class="row">
         <div class="col-md-3">
           <div class="people-link">
-            <a class="people-link__more" id="more">
+            <a class="people-link__more">
 							Показать еще отзывы
             </a>
           </div>
@@ -838,13 +838,6 @@
   <script src="js/zoomsl-3.0.min.js"></script>
   <script src="js/sticky.min.js"></script>
   <script src="js/js.js"></script>
-  <script>
-  	var activeStep = 3;
-      $(".people-link").click(function () {
-        $('.hidden').eq(activeStep++).show();
-        if (activeStep == $('.hiden').length) $(this).hide();
-      });
-  </script>
 
 </body>
 

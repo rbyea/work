@@ -29,8 +29,8 @@
 }
 
 .magnifier {
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .arrow {
