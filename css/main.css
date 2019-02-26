@@ -582,27 +582,22 @@ img.slider__item.slick-slide {
 .home-list {
   color: #666666;
   font-size: 14px;
+  text-decoration: none;
 }
 
 .home-list__close:before {
   display: none;
 }
 
-.home a {
+.home-list a {
   margin-left: 18px;
   color: #666666;
   position: relative;
-  text-decoration: none;
 }
 
-.home a:before {
-  content: "<";
-  content-position: absolute;
-  left: -16px;
-}
-
-.home a:hover {
+.home-list.active {
   color: #1484c7;
+  text-decoration: underline;
 }
 
 .home-guidance {
@@ -780,6 +775,16 @@ ul {
 
 .subtitle-mobile {
   display: none;
+}
+
+.home-list a:hover {
+  color: #1484c7;
+}
+
+.home-list a:before {
+  content: '<';
+  position: absolute;
+  left: -16px;
 }
 
 .delivery {
