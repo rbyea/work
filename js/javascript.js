@@ -48,3 +48,30 @@ $('#humburger-btn').on('click', function () {
 $('.header-navbar__mobile_window-close').on('click', function () {
 	$('#header-menu__mob').toggleClass('mobile-menu__visible');
 });
+
+
+var much;
+var result;
+
+$(".minus").click(function () {
+	much = +$(this).closest(".basket-content__box_configuration-much").find("input").val();
+	result = much - 1;
+	if (result < 1) {
+		result = 1;
+	}
+	$(this).closest(".basket-content__box_configuration-much").find("input").val(result)
+	return true;
+});
+$(".plus").click(function () {
+	much = +$(this).closest(".basket-content__box_configuration-much").find("input").val();
+	result = much + 1;
+	$(this).closest(".basket-content__box_configuration-much").find("input").val(result)
+	return true;
+});
+var sum = 0;
+$('.basket-content__box_configuration-much').each(function () {
+	$(this).find('input').each(function () {
+		sum += parseInt($(this).val());
+	});
+	$('.result').append(sum);
+});

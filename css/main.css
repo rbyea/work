@@ -1164,6 +1164,52 @@ ul {
   margin-left: 14px;
 }
 
+.basket {
+  padding-top: 33px;
+  padding-bottom: 93px;
+}
+
+.basket-content__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.basket-content__box_configuration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.basket-content__box_configuration-much {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#much {
+  width: 34px;
+  height: 22px;
+  text-align: center;
+}
+
+.minus {
+  cursor: pointer;
+}
+
+.plus {
+  cursor: pointer;
+}
+
 body {
   color: #666;
   font-family: Arial, Helvetica, sans-serif;

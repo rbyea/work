@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Магазин</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container header-botton header-mob">
+			<div class="row vertical-aling">
+				<div class="col-xl-3 col-lg-3 col-md-5 col-sm-5 col-5">
+					<div class="header-box">
+						<div class="header-box__image">
+							<img src="img/header/logo.png" alt="logo">
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-2 col-sm col-1">
+					<div class="header-box">
+						<div class="header-box__phone">
+							<a href="tel:88007775577">8 800 777 55 77</a>
+						</div>
+						<div class="header-box__city">
+							<img src="img/header/placeholder.png" alt="placeholder"><a href="#">Калининград</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-3">
+					<div class="haeder-box">
+						<div class="header-box__work">
+							с 10:00 до 22:00
+						</div>
+						<div class="header-box__schedule">
+							Работаем без выходных
+						</div>
+					</div>
+					<div class="btn-mobile_green">
+						<button class="btn-green"><span>Корзина</span></button>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-2">
+					<div class="header-box">
+						<div class="header-box__btn">
+							<button class="button btn-transparent">Заказать звонок</button>
+						</div>
+					</div>
+					<div class="humburger">
+						<a class="humburger-wrap" id="humburger-btn">
+							<span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-navbar sticky">
+			<div class="container">
+				<div class="row vertical-aling">
+					<div class="col-xl-9 col-md-9 vertical-aling">
+						<div class="header-navbar__list ">
+							<nav>
+								<ul>
+									<li><a href="#menu-one">Главная</a> </li>
+									<li><a href="#menu-one">Корзина</a> </li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="col-xl-1 col-md-1"></div>
+					<div class="col-xl-2 col-md-2">
+						<div class="header-navbar__btn">
+							<button class="button buy-tranparent"><img src="img/header/shopping-cart.png" alt="shopping-cart">
+								Корзина</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8"></div>
+			<div class="col-md-4">
+				<div class="header-navbar__mobile" id="header-menu__mob">
+					<div class="header-navber__mobile_window">
+						<div class="header-navbar__mobile_window-close">✖</div>
+						<div class="header-navbar__mobile_window-content">
+							<div class="header-navbar__mobile_window-address">
+								<a href="tel:88007775577">8 800 777 55 77</a>
+							</div>
+							<div class="header-navbar__mobile_window-address">
+								<div class="header-navbar__mobile_window-address-h">
+									с 10:00 до 22:00
+								</div>
+								<div class="header-navbar__mobile_window-address-l">
+									Работаем без выходных
+								</div>
+							</div>
+							<ul>
+								<li><a href="#menu-one">Главная</a> </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="basket">
+		<div class="container">
+			<div class="row">
+				<div class="col-5">
+					<div class="basket-content">
+
+						<div class="basket-content__box">
+							<div class="basket-content__box_image">
+								<img src="img/basket/img.png" alt="img">
+							</div>
+
+							<div class="basket-content__box_configuration">
+
+
+								<div class="basker-content__box_configuration-text">
+
+									<div class="basket-content__box_configuration-title">
+										Название продукта название ага
+									</div>
+
+									<div class="basket-content__box_configuration-price">
+										<div class="basket-content__box_configuration-l">
+											14590 руб.
+										</div>
+										<div class="basket-content__box_configuration-b">
+											10950 руб.
+										</div>
+									</div>
+
+								</div>
+
+								<div class="basket-content__box_configuration-much">
+									<div class="quantity-text">
+										Количество
+									</div>
+									<div class="quantity">
+										<span class="minus">-</span>
+										<input type="text" value="2" id="much">
+										<span class="plus">+</span>
+									</div>
+									<div class="quantity-image">
+										<img src="img/basket/garbage.png" alt="garbage">
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="col-7"></div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row align-items-end">
+				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 footer-h col-12 order-md-0 order-3">
+					<div class="footer-content">
+						<div class="footer-content__image">
+							<img src="img/header/logo.png" alt="logo">
+						</div>
+						<div class="footer-content footer-content__mobile">
+							<div class="footer-content__icon">
+								<img src="img/footer/vk.png" alt="vk">
+								<img src="img/footer/youtube.png" alt="youtube">
+								<img src="img/footer/instagram.png" alt="instagram">
+							</div>
+						</div>
+						<div class="footer-content__text">
+							<div class="footer-content__text_h">© 2014-2019 Все права защищены.</div>
+							<div class="footer-content__text_l">Копирование сайта или его элементов запрещено.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  footer-m col-12 order-md-1 order-2">
+					<div class="footer-content">
+						<div class="footer-content__list">
+							<ul>
+								<li><a href="#">Условия доставки</a></li>
+								<li><a href="#">Условия оплаты</a></li>
+								<li><a href="#">Отслеживание заказа</a></li>
+								<li><a href="#">Возврат и обмен</a></li>
+								<li><a href="#">Условия использования сайта</a></li>
+								<li><a href="#">Обработка персональных данных</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-1 none col-md-1 col-sm-12 col-12 order-md-2 order-1">
+					<div class="footer-content">
+						<div class="footer-content__icon">
+							<img src="img/footer/vk.png" alt="vk">
+							<img src="img/footer/youtube.png" alt="youtube">
+							<img src="img/footer/instagram.png" alt="instagram">
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 footer-l col-12  order-md-3 order-0">
+					<div class="footer-content">
+						<div class="footer-content__image image-footer">
+							<img src="img/header/logo.png" alt="logo">
+						</div>
+						<div class="footer-content__box">
+							<div class="footer-content__box_time">
+								с 10:00 до 22:00
+							</div>
+							<div class="footer-content__box_text">
+								работаем без выходных
+							</div>
+						</div>
+						<div class="footer-content__box">
+							<div class="footer-content__box_phone">
+								<a href="tel:88007775577">8 800 777 55 77</a>
+							</div>
+							<div class="footer-content__box_text">
+								Есть вопросы? Звоните!
+							</div>
+						</div>
+						<div class="footer-content__box">
+							<div class="footer-content__box_email">
+								<a href="mailto:support@aaaaa.ru">support@aaaaa.ru</a>
+							</div>
+							<div class="footer-content__box_text">
+								Есть вопросы? Пишите!
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+	<script src="js/sticky.min.js"></script>
+	<script src="js/javascript.js"></script>
+	<script>
+		var much;
+		var result;
+
+		$(".minus").click(function () {
+			much = +$(this).closest(".basket-content__box_configuration-much").find("input").val();
+			result = much - 1;
+			if (result < 1) {
+				result = 1;
+			}
+			$(this).closest(".basket-content__box_configuration-much").find("input").val(result)
+			return true;
+		});
+		$(".plus").click(function () {
+			much = +$(this).closest(".basket-content__box_configuration-much").find("input").val();
+			result = much + 1;
+			$(this).closest(".basket-content__box_configuration-much").find("input").val(result)
+			return true;
+		});
+		var sum = 0;
+		$('.basket-content__box_configuration-much').each(function () {
+			$(this).find('input').each(function () {
+				sum += parseInt($(this).val());
+			});
+			$('.result').append(sum);
+		});
+	</script>
+
+</body>
+
+</html>
