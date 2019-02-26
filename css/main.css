@@ -1049,7 +1049,8 @@ ul {
 }
 
 .manufacturer-content {
-  background-image: url("../img/manufacturer/bg-image.png");
+  background: url("../img/manufacturer/bg-image.png") no-repeat;
+  background-size: cover;
   height: 230px;
 }
 
@@ -1285,6 +1286,15 @@ body {
   }
   .none {
     display: none;
+  }
+  .manufacturer-content__box-subtitle {
+    font-size: 14px;
+  }
+  .manufacturer-content__box_price-b {
+    font-size: 16px;
+  }
+  .manufacturer-content__box_price-l {
+    font-size: 14px;
   }
 }
 
