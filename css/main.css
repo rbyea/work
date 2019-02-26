@@ -75,6 +75,7 @@
 }
 
 .modal-slider__container {
+  width: 1140px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -111,6 +112,10 @@
 
 img.slider__item.slick-slide {
   width: 420px;
+}
+
+.slider-mobile {
+  margin-right: 300px;
 }
 
 .slider-index {
@@ -528,10 +533,6 @@ img.slider__item.slick-slide {
   z-index: 100;
 }
 
-.slider-mobile {
-  width: 600px;
-}
-
 .slider {
   margin-left: 90px;
 }
@@ -582,7 +583,6 @@ img.slider__item.slick-slide {
 .home-list {
   color: #666666;
   font-size: 14px;
-  text-decoration: none;
 }
 
 .home-list__close:before {

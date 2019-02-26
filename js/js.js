@@ -97,10 +97,10 @@ $(document).ready(function(){
 			$('.slider').slick('setPosition');
 			$('.slider-nav').slick('setPosition');
 			
-			$('.slider-index').slick({
+			$('.slider-mobile').slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
-				arrows: false,
+				arrows: true,
 				fade: true,
 				asNavFor: '.slider-nav',
 				nextArrow: '<div class="arrow arrow_right"><i class="fas fa-chevron-right"></i></div>',
