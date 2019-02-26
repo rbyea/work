@@ -337,6 +337,19 @@ img.slider__item.slick-slide {
   font-weight: 400;
 }
 
+.buy-tranparent span {
+  display: none;
+}
+
+.buy-tranparent.active {
+  color: #ffffff;
+  background-color: #87bd23;
+}
+
+.buy-tranparent.active span {
+  display: inline-block;
+}
+
 .header-botton {
   padding-bottom: 16px;
 }
@@ -690,6 +703,11 @@ img.slider__item.slick-slide {
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
+}
+
+.home-content__button .button-product {
+  margin-top: 0;
+  margin-left: 16px;
 }
 
 .home-content__mobile {
