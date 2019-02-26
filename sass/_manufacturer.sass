@@ -1,0 +1,53 @@
+.manufacturer
+	padding-bottom: 37px
+	&-content
+		background-image: url('../img/manufacturer/bg-image.png')
+		height: 230px
+		&__box
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			text-align: center
+			box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.24)
+			border-radius: 4px
+			border: 1px solid #bdbbbb
+			background-color: #ffffff
+			padding: 15px 12px 17px 12px
+			margin-top: 23px
+			&_image
+				position: relative
+				margin-bottom: 11px
+				img
+					max-width: 100%
+				&:before
+					content: url('../img/slider/discount.png')
+					position: absolute
+					right: 0px
+					top: -10px
+				&:after
+					content: '25%'
+					position: absolute
+					top: -13px
+					right: 75px
+					color: #333333
+					font-size: 16px
+					font-weight: 400
+					line-height: 36px
+			&_stars
+				margin-bottom: 11px
+			&_price
+				display: flex
+				&-b
+					color: #333333
+					font-size: 24px
+					font-weight: 400
+					line-height: 36px
+				&-l
+					color: #666666
+					font-size: 18px
+					font-weight: 400
+					line-height: 36px
+					text-decoration: line-through
+					margin-left: 14px
+

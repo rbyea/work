@@ -116,10 +116,6 @@ img.slider__item.slick-slide {
   z-index: 10000;
 }
 
-.slider-nav.slider-nav-two {
-  visibility: hidden;
-}
-
 .modal-slider__center {
   width: 100%;
   height: 100%;
@@ -1046,6 +1042,92 @@ ul {
 
 .image-footer {
   display: none;
+}
+
+.manufacturer {
+  padding-bottom: 37px;
+}
+
+.manufacturer-content {
+  background-image: url("../img/manufacturer/bg-image.png");
+  height: 230px;
+}
+
+.manufacturer-content__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  border: 1px solid #bdbbbb;
+  background-color: #ffffff;
+  padding: 15px 12px 17px 12px;
+  margin-top: 23px;
+}
+
+.manufacturer-content__box_image {
+  position: relative;
+  margin-bottom: 11px;
+}
+
+.manufacturer-content__box_image img {
+  max-width: 100%;
+}
+
+.manufacturer-content__box_image:before {
+  content: url("../img/slider/discount.png");
+  position: absolute;
+  right: 0px;
+  top: -10px;
+}
+
+.manufacturer-content__box_image:after {
+  content: '25%';
+  position: absolute;
+  top: -13px;
+  right: 75px;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.manufacturer-content__box_stars {
+  margin-bottom: 11px;
+}
+
+.manufacturer-content__box_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.manufacturer-content__box_price-b {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.manufacturer-content__box_price-l {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  text-decoration: line-through;
+  margin-left: 14px;
 }
 
 body {
