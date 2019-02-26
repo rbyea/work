@@ -69,7 +69,8 @@
 
 .modal-slider {
   display: none;
-  position: relative;
+  width: 100%;
+  position: fixed;
   z-index: 100000;
 }
 
@@ -587,26 +588,21 @@ img.slider__item.slick-slide {
   display: none;
 }
 
-.home-list a {
+.home a {
   margin-left: 18px;
   color: #666666;
   position: relative;
   text-decoration: none;
 }
 
-.home-list a:before {
-  content: '<';
-  position: absolute;
+.home a:before {
+  content: "<";
+  content-position: absolute;
   left: -16px;
 }
 
-.home-list a:hover {
+.home a:hover {
   color: #1484c7;
-}
-
-.home-list.active {
-  color: #1484c7;
-  text-decoration: underline;
 }
 
 .home-guidance {
@@ -905,9 +901,9 @@ ul {
 }
 
 .review button {
-  padding: 0;
+  padding: 0 6px;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 24px;
 }
 
 .product-title {

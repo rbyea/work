@@ -169,6 +169,21 @@ $(document).ready(function () {
 		$('#header-menu__mob').toggleClass('mobile-menu__visible');
 	});
 
+	// клик по кнопке "добавить в корзину"
+	$('.add-in-basket').on('click', function(){
+		var url = 'basket.html';
+		$(this).text('В корзине 1шт. Перейти');
+		$('.add-in-basket:contains("В корзине 1шт. Перейти")').on('click', function(){
+			$(location).attr('href',url);
+		});
+	});
+
+	// клик по кнопке " купить сейчас "
+	$('.buy-now').on('click', function(){
+		var url = 'basket.html';
+		$(location).attr('href',url);
+	});
+
 }); // end jquery
 
 // показать скрыть отзывы
