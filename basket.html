@@ -115,7 +115,7 @@
 	<section class="basket">
 		<div class="container">
 			<div class="row">
-				<div class="col-4">
+				<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 flex-mobile">
 					<div class="basket-content">
 
 						<div class="basket-content__box">
@@ -215,28 +215,29 @@
 					</div>
 
 				</div>
-				<div class="col-8">
+				<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
 					<div class="basket-description">
 						<div class="basket-description__box">
-							<label class="label-before" for="contact-phone">Ваш телефон</label>
-							<input type="tel" name="phone" class="contact-phone" required>
-							<div class="basket-description__box_contact">
-								<div class="fio">
-									<label for="contact-surname">Фамилия</label>
-									<input type="text" class="contact-surname">
+							<form action="#">
+								<label class="label-before" for="contact-phone">Ваш телефон</label>
+								<input type="tel" name="phone" class="contact-phone" required>
+								<div class="basket-description__box_contact">
+									<div class="fio">
+										<label for="contact-surname">Фамилия</label>
+										<input type="text" class="contact-surname">
+									</div>
+									<div class="fio">
+										<label for="contact-name">Имя</label>
+										<input type="text" class="contact-name">
+									</div>
+									<div class="fio">
+										<label for="contact-patronymic">Отчество</label>
+										<input type="text" class="contact-patronymic">
+									</div>
 								</div>
-								<div class="fio">
-									<label for="contact-name">Имя</label>
-									<input type="text" class="contact-name">
+								<div class="necessary">
+									Указать адрес <br> доставки (необязтаельно)
 								</div>
-								<div class="fio">
-									<label for="contact-patronymic">Отчество</label>
-									<input type="text" class="contact-patronymic">
-								</div>
-							</div>
-							<div class="necessary">
-								Указать адрес доставки (необязтаельно)
-							</div>
 								<div class="basket-description__box_contact-region">
 									<label for="contact-region">Область</label>
 									<input type="text" class="contact-region">
@@ -266,6 +267,7 @@
 									</div>
 								</div>
 								<button type="submit" class="button button-blue btn-form">Подтвердить заказ</button>
+							</form>
 						</div>
 						<div class="basket-description__text">
 							Мы перезвоним через
