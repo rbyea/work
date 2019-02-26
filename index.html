@@ -16,6 +16,7 @@
 
 <body>
   <header class="header">
+		
     <div class="container header-botton header-mob">
       <div class="row vertical-aling">
         <div class="col-xl-3 col-lg-3 col-md-5 col-sm-5 col-5">
@@ -52,7 +53,7 @@
         <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-2">
           <div class="header-box">
             <div class="header-box__btn">
-              <button class="button btn-transparent">Заказать звонок</button>
+              <button class="button btn-transparent call">Заказать звонок</button>
             </div>
           </div>
           <div class="humburger">
@@ -64,32 +65,32 @@
       </div>
     </div>
     <div class="header-navbar sticky">
-      <div class="container">
-        <div class="row vertical-aling">
-          <div class="col-xl-9 col-md-9 vertical-aling">
-            <div class="header-navbar__list ">
-              <nav>
-                <ul>
-                  <li><a href="#menu-one">Характеристики</a> </li>
-                  <li><a href="#menu-two">Описание</a> </li>
-                  <li><a href="#menu-three">Комплектация</a> </li>
-                  <li><a href="#menu-four">Видеообзор</a> </li>
-                  <li><a href="#menu-five">Оплата и доставка</a></li>
-                  <li><a href="#menu-six">Отзывы</a> </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="col-xl-1 col-md-1"></div>
-          <div class="col-xl-2 col-md-2">
-            <div class="header-navbar__btn">
-              <button class="button buy-tranparent"><img src="img/header/shopping-cart.png" alt="shopping-cart">
-                Корзина</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+			<div class="container">
+				<div class="row vertical-aling">
+					<div class="col-xl-9 col-md-9 vertical-aling">
+						<div class="header-navbar__list ">
+							<nav>
+								<ul>
+									<li><a href="#menu-one">Характеристики</a> </li>
+									<li><a href="#menu-two">Описание</a> </li>
+									<li><a href="#menu-three">Комплектация</a> </li>
+									<li><a href="#menu-four">Видеообзор</a> </li>
+									<li><a href="#menu-five">Оплата и доставка</a></li>
+									<li><a href="#menu-six">Отзывы</a> </li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="col-xl-1 col-md-1"></div>
+					<div class="col-xl-2 col-md-2">
+						<div class="header-navbar__btn">
+							<button class="button buy-tranparent"><img src="img/header/shopping-cart.png" alt="shopping-cart">
+								Корзина</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- /header-navbar -->
     <div class="row">
       <div class="col-md-8"></div>
       <div class="col-md-4">
@@ -134,8 +135,8 @@
       <div class="row">
         <div class="col-xl-5 col-md-6 col-sm-6 col-12">
           <div class="home-list">
-            <a class="home-list__close" href="#">Главно</a>
-            <a href="#">Каталог</a>
+            <a class="home-list__close" href="#">Главная</a>
+            <a class="active" href="#">Каталог</a>
             <a href="#">Название продукта такое название ага</a>
           </div>
           <div class="slider-nav">
@@ -244,7 +245,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="section-title" id="menu-one" href="#menu-one">Характеристики</h2>
+          <h2 class="section-title" id="menu-one">Характеристики</h2>
         </div>
       </div>
       <div class="row">
@@ -804,6 +805,21 @@
     </div>
   </footer>
 
+	<div class="modal-call">
+		<div class="modal-call__window">
+			<div class="modal-call__close"><i class="fas fa-times"></i></div>
+			<div class="modal-call__title">
+					Введите Ваш номер телефона и
+					мы перезвоним!					
+			</div>
+			<form class="modal-call__form">
+				<label class="modal-call__label" for="modal-phone">номер телефона</label>
+				<input class="modal-call__input" id="modal-phone" type="tel" placeholder="+7 909 132 22 33" required>
+				<button class="button button-blue">Заказать звонок</button>
+			</form>
+		</div> <!-- /modal-call__window -->
+	</div> <!-- /.modal-call -->
+
   <div class="modal-slider">
     <div class="container">
       <div class="row">
@@ -815,6 +831,8 @@
                 <div class="slider-nav__item"><img src="img/slider/photo-slider.png" alt="slider"></div>
                 <div class="slider-nav__item"><img src="img/slider/photo-slider-2.png" alt="slider"></div>
                 <div class="slider-nav__item"><img src="img/slider/photo-slider.png" alt="slider"></div>
+								<div class="slider-nav__item"><img src="img/slider/photo-slider-2.png" alt="slider"></div>
+								<div class="slider-nav__item"><img src="img/slider/photo-slider.png" alt="slider"></div>
                 <div class="slider-nav__item"><img src="img/slider/photo-slider-2.png" alt="slider"></div>
               </div>
               <div class="slider slider-index slider-mobile">
@@ -831,14 +849,14 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> <!-- /modal-slider -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.0.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
-  <script src="js/zoomsl-3.0.min.js"></script>
-  <script src="js/sticky.min.js"></script>
+	<script src="js/zoomsl-3.0.min.js"></script>
+	<script src="js/sticky.min.js"></script>
   <script src="js/js.js"></script>
 
 </body>

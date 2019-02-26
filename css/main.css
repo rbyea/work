@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .rating {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,6 +128,85 @@ img.slider__item.slick-slide {
 
 .slick-slide img {
   width: 120%;
+}
+
+/* заказать звонок */
+.modal-call {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+}
+
+.modal-call__window {
+  position: fixed;
+  display: block;
+  width: 458px;
+  padding: 55px 24px 28px 22px;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border: 1px solid #dadada;
+  background: #ffffff;
+  opacity: 1;
+  z-index: 9999999;
+}
+
+.modal-call__close {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  cursor: pointer;
+}
+
+.modal-call__title {
+  max-width: 377px;
+  height: 53px;
+  margin-bottom: 35px;
+  padding-left: 77px;
+  color: #666666;
+  font-size: 18px;
+  line-height: 24px;
+  background: url("../img/header/call.png") no-repeat left center;
+}
+
+.modal-call__label {
+  display: block;
+  color: #666666;
+  font-size: 12px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.modal-call__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 8px 37px 8px 15px;
+  border-radius: 4px;
+  border: 1px solid #1484c7;
+  outline: none;
+}
+
+.modal-call__visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-call .button.button-blue {
+  display: block;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 .header {
@@ -463,6 +543,7 @@ img.slider__item.slick-slide {
 .slider-nav {
   float: left;
   width: 62px;
+  height: 100%;
 }
 
 .slider-nav__item {
@@ -511,7 +592,6 @@ img.slider__item.slick-slide {
   color: #666666;
   position: relative;
   text-decoration: none;
-  border-bottom: 1px solid #666666;
 }
 
 .home-list a:before {
@@ -522,7 +602,11 @@ img.slider__item.slick-slide {
 
 .home-list a:hover {
   color: #1484c7;
-  border-bottom: 1px solid #1484c7;
+}
+
+.home-list.active {
+  color: #1484c7;
+  text-decoration: underline;
 }
 
 .home-guidance {
@@ -818,6 +902,12 @@ ul {
 
 .review-video img {
   max-width: 100%;
+}
+
+.review button {
+  padding: 0;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 .product-title {
@@ -1862,6 +1952,20 @@ body {
 @media only screen and (max-width: 492px) {
   .header-navber__mobile_window {
     width: 60%;
+  }
+  .modal-call {
+    padding-top: 30px;
+  }
+  .modal-call__window {
+    max-width: 300px;
+  }
+  .modal-call__title {
+    padding-left: 0;
+    text-align: center;
+    background: none;
+  }
+  .modal-call__label {
+    text-align: center;
   }
 }
 

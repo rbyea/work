@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+	// модальное окно заказать звонок
+
+	$('.call').click(function (){
+		$('.modal-call').addClass('modal-call__visible');
+	});
+	$('.modal-call__close').click(function (){
+		$('.modal-call').removeClass('modal-call__visible');
+	});
+
+
 	$(".zoom").imagezoomsl({
 		zoomrange: [2.12, 12],
 		magnifiersize: [530, 340],
@@ -13,20 +23,29 @@ $(document).ready(function(){
 	$('.slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: true,
+		arrows: false,
 		fade: true,
 		asNavFor: '.slider-nav',
 		nextArrow: '<div class="arrow arrow_right"><i class="fas fa-chevron-right"></i></div>',
-		prevArrow: '<div class="arrow arrow_left"><i class="fas fa-chevron-left"></i></div>'
+		prevArrow: '<div class="arrow arrow_left"><i class="fas fa-chevron-left"></i></div>',
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					arrows: true
+				}
+			}
+		]
 	});
 	$('.slider-nav')
 	.on('init', function(event, slick) {
 		$('.slider-nav .slick-slide.slick-current').addClass('is-active');
 	})
 	.slick({
-		slidesToShow: 3,
-		slidesToScroll: false,
+		slidesToShow: 4,
+		slidesToScroll: 1,
 		asNavFor: '.slider',
+		infinity: true,
 		centerPadding: 0,
 		centerMode: true,
 		focusOnSelect: true,
@@ -73,9 +92,8 @@ $(document).ready(function(){
 	
 	// modals
 	$(document).on('click', '.tracker', function(){
+		if ( $( window ).width() >= 992 ) {
 			$('.modal-slider').addClass('modal-slider_show');
-
-			
 			$('.slider').slick('setPosition');
 			$('.slider-nav').slick('setPosition');
 			
@@ -98,6 +116,8 @@ $(document).ready(function(){
 					focusOnSelect: true,
 					arrows: false
 			});
+		}			
+			
 
 		});
 		$('.modal-slider__close').on('click', function(){
@@ -130,32 +150,15 @@ $(document).ready(function(){
 		}
 	}
 })();
-
-// прокрутка до якоря
-const anchors = [].slice.call(document.querySelectorAll('a[href*="#menu-one"], a[href*="#menu-two"], a[href*="#menu-three"], a[href*="#menu-four"], a[href*="#menu-five"], a[href*="#menu-six"]')),
-	animationTime = 300,
-	framesCount = 20;
-
-anchors.forEach(function (item) {
-	item.addEventListener('click', function (e) {
-		e.preventDefault();
-
-		let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top;
-
-		let scroller = setInterval(function () {
-
-			let scrollBy = coordY / framesCount;
-
-			if (scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
-				window.scrollBy(0, scrollBy);
-			} else {
-				window.scrollTo(0, coordY);
-				clearInterval(scroller);
-			}
-		}, animationTime / framesCount);
-	});
-});
 $(document).ready(function () {
+
+	// прокрутка до якоря
+
+	$("body").on('click', '[href*="#"]', function(e){
+		var fixed_offset = 100;
+		$('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+		e.preventDefault();
+	});
 
 	// вызов бургера
 
