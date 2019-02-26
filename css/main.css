@@ -1313,6 +1313,9 @@ body {
 }
 
 @media only screen and (max-width: 991px) {
+  .manufacturer {
+    padding-top: 90px;
+  }
   .container {
     max-width: none;
     width: 95%;
