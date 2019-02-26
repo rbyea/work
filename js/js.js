@@ -1,5 +1,8 @@
 $(document).ready(function(){
-
+	
+	//$(document).on('click', function(e) {
+  // console.log(e.target)
+	//})
 	// модальное окно заказать звонок
 
 	$('.call').click(function (){
@@ -173,6 +176,7 @@ $(document).ready(function () {
 	$('.add-in-basket').on('click', function(){
 		var url = 'basket.html';
 		$(this).text('В корзине 1шт. Перейти');
+		$('.buy-tranparent').addClass('active');
 		$('.add-in-basket:contains("В корзине 1шт. Перейти")').on('click', function(){
 			$(location).attr('href',url);
 		});
@@ -180,6 +184,13 @@ $(document).ready(function () {
 
 	// клик по кнопке " купить сейчас "
 	$('.buy-now').on('click', function(){
+		var url = 'basket.html';
+		$(location).attr('href',url);
+	});
+
+	// клик по непустой корзине
+
+	$(document).on('click', '.buy-tranparent.active', function(){
 		var url = 'basket.html';
 		$(location).attr('href',url);
 	});
