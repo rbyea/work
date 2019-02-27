@@ -1778,6 +1778,9 @@ body {
 }
 
 @media only screen and (max-width: 991px) {
+  .sticky-close {
+    display: none;
+  }
   .manufacturer {
     padding-top: 90px;
   }
@@ -1824,7 +1827,7 @@ body {
     display: none;
   }
   .home {
-    padding-top: 80px;
+    padding-top: 0;
   }
   .home-guidance {
     font-size: 13px;

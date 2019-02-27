@@ -125,13 +125,9 @@ $(document).ready(function(){
 		});
 		$('.modal-slider__close').on('click', function(){
 			$('.modal-slider').removeClass('modal-slider_show');
-		});
-
-//прилипающеее меню
-	var sticky = new Sticky('.sticky');
-
-//прилипающее меню на планшетах и телефонах
-	var sticky = new Sticky('.header-mobile');
+		});    $(document).ready(function () {
+      $(".sticky").sticky({ topSpacing: 0 });
+    });
 
 //всплывающее описание, через 1 минуту
 	$(".warning-close").hide();
@@ -261,4 +257,12 @@ $(document).ready(function () {
 	$(window).resize(function () {
 		checkWidth();
 	});
+});
+
+$(document).ready(function () {
+	$(".sticky").sticky({ topSpacing: 0 });
+});
+
+$(document).ready(function () {
+	$(".header-mobile").sticky({ topSpacing: 0 });
 });
