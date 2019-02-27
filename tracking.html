@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Магазин</title>
+</head>
+
+<body>
+	<header class="header">
+
+		<div class="container header-botton header-mob">
+			<div class="row vertical-aling">
+				<div class="col-xl-3 col-lg-3 col-md-5 col-sm-5 col-5">
+
+					<div class="header-box">
+						<div class="header-box__image">
+							<img src="img/header/logo.png" alt="logo">
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-1">
+					<div class="header-box">
+						<div class="header-box__phone">
+							<a href="tel:88007775577">8 800 777 55 77</a>
+						</div>
+						<div class="header-box__city">
+							<img src="img/header/placeholder.png" alt="placeholder"><a href="#">Калининград</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+					<div class="haeder-box">
+						<div class="header-box__work">
+							с 10:00 до 22:00
+						</div>
+						<div class="header-box__schedule">
+							Работаем без выходных
+						</div>
+					</div>
+					<div class="btn-mobile_green">
+						<button class="btn-green buy-tranparent"><i class="fas fa-shopping-cart"></i>
+							<div class="btn-close">Корзина</div><span> 1 </span>
+						</button>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-2 burger-end">
+					<div class="header-box">
+						<div class="header-box__btn">
+							<button class="button btn-transparent call">Заказать звонок</button>
+						</div>
+					</div>
+					<div class="humburger">
+						<a class="humburger-wrap" id="humburger-btn">
+							<span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sticky-close">
+			<div class="header-navbar sticky">
+				<div class="container">
+					<div class="row vertical-aling">
+						<div class="col-xl-9 col-md-9 vertical-aling">
+							<div class="header-navbar__list ">
+								<nav>
+									<ul>
+										<li><a href="#menu-one">Главная</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div class="col-xl-1 col-md-1"></div>
+						<div class="col-xl-2 col-md-2">
+							<div class="header-navbar__btn">
+								<button class="button buy-tranparent"><i class="fas fa-shopping-cart"></i>
+									Корзина<span>1</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- /header-navbar -->
+		</div>
+		<div class="row">
+			<div class="col-md-8"></div>
+			<div class="col-md-4">
+				<div class="header-navbar__mobile" id="header-menu__mob">
+					<div class="header-navber__mobile_window">
+						<div class="header-navbar__mobile_window-close">✖</div>
+						<div class="header-navbar__mobile_window-content">
+							<div class="header-navbar__mobile_window-address">
+								<a href="tel:88007775577">8 800 777 55 77</a>
+							</div>
+							<div class="header-navbar__mobile_window-address">
+								<div class="header-navbar__mobile_window-address-h">
+									с 10:00 до 22:00
+								</div>
+								<div class="header-navbar__mobile_window-address-l">
+									Работаем без выходных
+								</div>
+							</div>
+							<ul>
+								<li><a href="#menu-one">Характеристики</a> </li>
+								<li><a href="#menu-two">Описание</a> </li>
+								<li><a href="#menu-three">Комплектация</a> </li>
+								<li><a href="#menu-four">Видеообзор</a> </li>
+								<li><a href="#menu-five">Оплата и доставка</a></li>
+								<li><a href="#menu-six">Отзывы</a> </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="tracking">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-5">
+					<div class="tracking-box">
+						<div class="tracking-box__image">
+							<img src="img/tracking/track.png" alt="track">
+						</div>
+						<div class="tracking-box__title">
+							<h2 class="section-title">
+								Отслеживание
+							</h2>
+						</div>
+						<div class="tracking-box__subtitle">
+							Отследить продвижение заказа вы можете ниже:
+						</div>
+						<form class="tracking-box__form">
+							<input type="tel" name="phone" class="tracking-box__form-input" required placeholder="Номер заказа">
+							<button class="button btn-track">Отследить</button>
+						</form>
+						<div class="tracking-box__text">
+							<div class="tracking-box__text_b">Заказ сформирован</div>
+							<div class="tracking-box__text_l">10.01.2019, 08:00</div>
+						</div>
+						<div class="tracking-box__text">
+							<div class="tracking-box__text_b">Заказ упакован</div>
+							<div class="tracking-box__text_l">10.01.2019, 12:00</div>
+						</div>
+						<div class="tracking-box__text">
+							<div class="tracking-box__text_b">Заказ отправлен,<br>
+							трек 6100993456374</div>
+							<div class="tracking-box__text_l">10.01.2019, 13:00</div>
+						</div>
+						<div class="tracking-box__text">
+							<div class="tracking-box__text_b">Заказ в пути</div>
+							<div class="tracking-box__text_l">11.01.2019, 10:00</div>
+						</div>
+						<div class="tracking-box__text">
+							<div class="tracking-box__text_b">Заказ доставлен в пункт выдачи</div>
+							<div class="tracking-box__text_l">13.01.2019, 15:00</div>
+						</div>
+						<div class="tracking-box__text">
+							<div class="tracking-box__text_b">Заказ получен</div>
+							<div class="tracking-box__text_l">13.01.2019, 15:00</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row align-items-end">
+				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 footer-h col-12 order-md-0 order-3">
+					<div class="footer-content">
+						<div class="footer-content__image">
+							<img src="img/header/logo.png" alt="logo">
+						</div>
+						<div class="footer-content footer-content__mobile">
+							<div class="footer-content__icon">
+								<img src="img/footer/vk.png" alt="vk">
+								<img src="img/footer/youtube.png" alt="youtube">
+								<img src="img/footer/instagram.png" alt="instagram">
+							</div>
+						</div>
+						<div class="footer-content__text">
+							<div class="footer-content__text_h">© 2014-2019 Все права защищены.</div>
+							<div class="footer-content__text_l">Копирование сайта или его элементов запрещено.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6  footer-m col-12 order-md-1 order-2">
+					<div class="footer-content">
+						<div class="footer-content__list">
+							<ul>
+								<li><a href="#">Условия доставки</a></li>
+								<li><a href="#">Условия оплаты</a></li>
+								<li><a href="#">Отслеживание заказа</a></li>
+								<li><a href="#">Возврат и обмен</a></li>
+								<li><a href="#">Условия использования сайта</a></li>
+								<li><a href="#">Обработка персональных данных</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-1 none col-md-1 col-sm-12 col-12 order-md-2 order-1">
+					<div class="footer-content">
+						<div class="footer-content__icon">
+							<img src="img/footer/vk.png" alt="vk">
+							<img src="img/footer/youtube.png" alt="youtube">
+							<img src="img/footer/instagram.png" alt="instagram">
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 footer-l col-12  order-md-3 order-0">
+					<div class="footer-content">
+						<div class="footer-content__image image-footer">
+							<img src="img/header/logo.png" alt="logo">
+						</div>
+						<div class="footer-content__box">
+							<div class="footer-content__box_time">
+								с 10:00 до 22:00
+							</div>
+							<div class="footer-content__box_text">
+								работаем без выходных
+							</div>
+						</div>
+						<div class="footer-content__box">
+							<div class="footer-content__box_phone">
+								<a href="tel:88007775577">8 800 777 55 77</a>
+							</div>
+							<div class="footer-content__box_text">
+								Есть вопросы? Звоните!
+							</div>
+						</div>
+						<div class="footer-content__box">
+							<div class="footer-content__box_email">
+								<a href="mailto:support@aaaaa.ru">support@aaaaa.ru</a>
+							</div>
+							<div class="footer-content__box_text">
+								Есть вопросы? Пишите!
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal-call">
+		<div class="modal-call__window">
+			<div class="modal-call__close"><i class="fas fa-times"></i></div>
+			<div class="modal-call__title">
+				Введите Ваш номер телефона и
+				мы перезвоним!
+			</div>
+			<form class="modal-call__form">
+				<label class="modal-call__label" for="modal-phone">номер телефона</label>
+				<input class="modal-call__input" id="modal-phone" type="tel" placeholder="+7 909 132 22 33" required>
+				<button class="button button-blue">Заказать звонок</button>
+			</form>
+		</div> <!-- /modal-call__window -->
+	</div> <!-- /.modal-call -->
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/js.js"></script>
+
+</body>
+
+</html>
