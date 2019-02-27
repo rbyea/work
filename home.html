@@ -16,6 +16,7 @@
 <body>
 
 	<header class="header">
+
 		<div class="container header-botton header-mob">
 			<div class="row vertical-aling">
 				<div class="col-xl-3 col-lg-3 col-md-5 col-sm-5 col-5">
@@ -26,7 +27,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-2 col-sm col-1">
+				<div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-1">
 					<div class="header-box">
 						<div class="header-box__phone">
 							<a href="tel:88007775577">8 800 777 55 77</a>
@@ -36,7 +37,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-3">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
 					<div class="haeder-box">
 						<div class="header-box__work">
 							с 10:00 до 22:00
@@ -46,13 +47,15 @@
 						</div>
 					</div>
 					<div class="btn-mobile_green">
-						<button class="btn-green"><span>Корзина</span></button>
+						<button class="btn-green buy-tranparent"><i class="fas fa-shopping-cart"></i>
+							<div class="btn-close">Корзина</div><span> 1 </span>
+						</button>
 					</div>
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-2">
+				<div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-2 burger-end">
 					<div class="header-box">
 						<div class="header-box__btn">
-							<button class="button btn-transparent">Заказать звонок</button>
+							<button class="button btn-transparent call">Заказать звонок</button>
 						</div>
 					</div>
 					<div class="humburger">
@@ -63,27 +66,29 @@
 				</div>
 			</div>
 		</div>
-		<div class="header-navbar sticky">
-			<div class="container">
-				<div class="row vertical-aling">
-					<div class="col-xl-9 col-md-9 vertical-aling">
-						<div class="header-navbar__list ">
-							<nav>
-								<ul>
-									<li><a href="#menu-one">Главная</a> </li>
-								</ul>
-							</nav>
+		<div class="sticky-close">
+			<div class="header-navbar sticky">
+				<div class="container">
+					<div class="row vertical-aling">
+						<div class="col-xl-9 col-md-9 vertical-aling">
+							<div class="header-navbar__list ">
+								<nav>
+									<ul>
+										<li><a href="#menu-one">Главная</a> </li>
+									</ul>
+								</nav>
+							</div>
 						</div>
-					</div>
-					<div class="col-xl-1 col-md-1"></div>
-					<div class="col-xl-2 col-md-2">
-						<div class="header-navbar__btn">
-							<button class="button buy-tranparent"><img src="img/header/shopping-cart.png" alt="shopping-cart">
-								Корзина</button>
+						<div class="col-xl-1 col-md-1"></div>
+						<div class="col-xl-2 col-md-2">
+							<div class="header-navbar__btn">
+								<button class="button buy-tranparent"><i class="fas fa-shopping-cart"></i>
+									Корзина<span>1</span></button>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> <!-- /header-navbar -->
 		</div>
 		<div class="row">
 			<div class="col-md-8"></div>
@@ -434,10 +439,25 @@
 		</div>
 	</footer>
 
+	<div class="modal-call">
+		<div class="modal-call__window">
+			<div class="modal-call__close"><i class="fas fa-times"></i></div>
+			<div class="modal-call__title">
+				Введите Ваш номер телефона и
+				мы перезвоним!
+			</div>
+			<form class="modal-call__form">
+				<label class="modal-call__label" for="modal-phone">номер телефона</label>
+				<input class="modal-call__input" id="modal-phone" type="tel" placeholder="+7 909 132 22 33" required>
+				<button class="button button-blue">Заказать звонок</button>
+			</form>
+		</div> <!-- /modal-call__window -->
+	</div> <!-- /.modal-call -->
+
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
-	<script src="js/sticky.min.js"></script>
-	<script src="js/javascript.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/js.js"></script>
 </body>
 
 </html>
