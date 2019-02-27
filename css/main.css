@@ -1610,6 +1610,18 @@ ul {
   margin-top: 25px;
 }
 
+form {
+  position: relative;
+}
+
+.form-label:before {
+  content: url("../img/basket/verified.png");
+  position: absolute;
+  right: 0;
+  top: 34px;
+  right: 10px;
+}
+
 body {
   color: #666;
   font-family: Arial, Helvetica, sans-serif;
@@ -2381,6 +2393,10 @@ body {
   .house input {
     width: 300px;
   }
+  .form-label:before {
+    top: 32px;
+    right: 72px;
+  }
 }
 
 @media only screen and (max-width: 525px) {
@@ -2447,6 +2463,9 @@ body {
   .basket-description__box form {
     width: 350px;
   }
+  .form-label:before {
+    right: 47px;
+  }
 }
 
 @media only screen and (max-width: 446px) {
@@ -2470,6 +2489,9 @@ body {
 @media only screen and (max-width: 429px) {
   .basket-description__box form {
     width: 326px;
+  }
+  .form-label:before {
+    right: 28px;
   }
 }
 
@@ -2603,6 +2625,9 @@ body {
   }
   .equipment-text_l {
     margin-bottom: 0;
+  }
+  .form-label:before {
+    right: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
