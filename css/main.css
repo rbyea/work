@@ -402,6 +402,10 @@ img.slider__item.slick-slide {
   display: inline-block;
 }
 
+.home-content__assessment_rating-text {
+  margin-top: 5px;
+}
+
 .humburger {
   cursor: pointer;
   display: none;
@@ -1673,6 +1677,7 @@ body {
   }
   .home-content__assessment_vendor {
     margin-left: 15px;
+    margin-top: 5px;
   }
   .home-content__title {
     font-size: 24px;
