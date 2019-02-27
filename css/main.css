@@ -1707,6 +1707,10 @@ form {
   margin-left: 15px;
 }
 
+.br {
+  display: none;
+}
+
 body {
   color: #666;
   font-family: Arial, Helvetica, sans-serif;
@@ -2565,6 +2569,24 @@ body {
   }
 }
 
+@media only screen and (max-width: 442px) {
+  .tracking-box__form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tracking-box__form-input {
+    width: 270px;
+  }
+  .btn-track {
+    width: 270px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .br {
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 434px) {
   .slider-mobile {
     width: 300px;
@@ -2670,6 +2692,9 @@ body {
 @media only screen and (max-width: 330px) {
   .basket-description__box form {
     width: 230px;
+  }
+  .tracking-box__text_b {
+    font-size: 15px;
   }
 }
 
