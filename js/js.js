@@ -3,8 +3,9 @@ $(document).ready(function(){
 	//$(document).on('click', function(e) {
   // console.log(e.target)
 	//})
-	// модальное окно заказать звонок
 
+
+	// модальное окно заказать звонок
 	$('.call').click(function (){
 		$('.modal-call').addClass('modal-call__visible');
 	});
@@ -149,6 +150,7 @@ $(document).ready(function(){
 		}
 	}
 })();
+
 $(document).ready(function () {
 
 	// прокрутка до якоря

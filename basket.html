@@ -160,7 +160,7 @@
 									</div>
 									<div class="quantity">
 										<span class="minus">-</span>
-										<input type="text" value="2" id="much">
+										<input type="text" value="1" id="much">
 										<span class="plus">+</span>
 									</div>
 									<div class="quantity-image">
@@ -191,7 +191,7 @@
 											14590 руб.
 										</div>
 										<div class="basket-content__box_configuration-b">
-											10950 руб.
+											10000 руб.
 										</div>
 									</div>
 
@@ -203,7 +203,7 @@
 									</div>
 									<div class="quantity">
 										<span class="minus">-</span>
-										<input type="text" value="2" id="much">
+										<input type="text" value="1" id="much">
 										<span class="plus">+</span>
 									</div>
 									<div class="quantity-image">
@@ -229,7 +229,7 @@
 				<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
 					<div class="basket-description">
 						<div class="basket-description__box">
-							<form action="#">
+							<form class="order-form" action="#">
 								<div class="form-label">
 									<label class="label-before" for="contact-phone">Ваш телефон</label>
 									<input type="tel" name="phone" class="contact-phone" required placeholder="+7 909 132 22 33">
@@ -245,7 +245,7 @@
 									</div>
 									<div class="fio">
 										<label for="contact-patronymic">Отчество</label>
-										<input type="text" class="contact-patronymic">
+										<input type="text" class="contact-patronymic" required>
 									</div>
 								</div>
 								<div class="necessary">
@@ -390,12 +390,32 @@
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/zoomsl-3.0.min.js"></script>
 	<script src="js/jquery.sticky.js"></script>
-	<script src="js/js.js"></script>
+	<script src="js/jquery.validate.js"></script>
 	<script>
-		var much;
-		var result;
+			// калькулятор для корзины
+	$(function() {
+
+		$('.order-form').validate({
+			rules: {
+
+			}
+		});
+
+	var much;
+	var result;
+	var price = $('.basket-content__box_configuration-price').find('.basket-content__box_configuration-b').text().replace('руб.','');
+	console.log(price);
+	var curPrice = parseInt(price)
+
+	function updatePrice() {
+		var totalPrice = result * curPrice;
+		$('.total-price').text(totalPrice + 'руб.');
+	};
 
 		$(".minus").click(function () {
 			much = +$(this).closest(".basket-content__box_configuration-much").find("input").val();
@@ -403,22 +423,29 @@
 			if (result < 1) {
 				result = 1;
 			}
-			$(this).closest(".basket-content__box_configuration-much").find("input").val(result)
+			$(this).closest(".basket-content__box_configuration-much").find("input").val(result);
+			updatePrice();
 			return true;
 		});
 		$(".plus").click(function () {
 			much = +$(this).closest(".basket-content__box_configuration-much").find("input").val();
 			result = much + 1;
-			$(this).closest(".basket-content__box_configuration-much").find("input").val(result)
+			$(this).closest(".basket-content__box_configuration-much").find("input").val(result);
+			updatePrice();
 			return true;
 		});
-		var sum = 0;
-		$('.basket-content__box_configuration-much').each(function () {
+		
+
+	});
+
+		/*
+			$('.basket-content__box_configuration-much').each(function () {
 			$(this).find('input').each(function () {
 				sum += parseInt($(this).val());
 			});
 			$('.result').append(sum);
 		});
+		*/
 	</script>
 
 </body>
