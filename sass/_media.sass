@@ -14,6 +14,13 @@
 				ul
 					li
 						margin-right: 17px
+
+	.add
+		&-in
+			&-basket
+				background-color: #87bd23 !important
+				margin-left: 0 !important
+
 	.home
 		&-guidance
 			display: none
@@ -21,6 +28,9 @@
 			&__button
 				margin-top: 10px
 				text-align: center
+				flex-wrap: wrap
+				&_blue
+					margin-bottom: 15px
 			&__subtitle
 				margin-top: 5px
 			&__price
@@ -121,6 +131,11 @@
 	.manufacturer
 		padding-top: 90px
 
+	.add
+		&-in
+			&-basket
+				background-color: #1484c7 !important
+
 	.container
 		max-width: none
 		width: 95%
@@ -181,6 +196,8 @@
 			&__button
 				text-align: left
 				margin-top: 15px
+				&_blue
+					display: none
 			&__list
 				margin-top: 14px
 				ul
@@ -202,20 +219,18 @@
 			width: 165px
 			height: 27px
 			border-radius: 4px
-			background-color: #87bd23
+			background-color: transparent
 			margin-left: 0px
-			color: #ffffff
+			color: #333333
 			font-family: "Arial MT"
 			font-size: 16px
 			position: relative
-			padding-left: 40px
+			padding-left: 15px
 			outline: none !important
-			border: 1px solid #87bd23
-			&:before
-				content: url("../img/header/shopping-cart-white.png")
-				position: absolute
-				left: 36px
-				top: 1.5px
+
+	.burger-end
+		display: flex
+		justify-content: space-evenly
 
 	.button
 		&-green
@@ -240,7 +255,7 @@
 			flex-direction: column-reverse
 
 	.slider
-		margin-top: 25px
+		width: 350px
 
 	.buy
 		&-one
@@ -391,6 +406,12 @@
 		&-mobile
 			width: 400px
 
+@media only screen and (max-width: 699px)
+	.home
+		&-content
+			&__price
+				font-size: 26px
+
 @media only screen and (max-width: 678px)
 	.slider
 		margin-top: 15%
@@ -429,6 +450,12 @@
 		&-mobile
 			margin-top: 0
 
+@media only screen and (max-width: 603px)
+	.add
+		&-in
+			&-basket
+				width: 250px			
+
 @media only screen and (max-width: 602px)
 	.home
 		&-content
@@ -453,6 +480,11 @@
 			width: 119px
 			&:before
 				left: 14px
+
+	.add
+		&-in
+			&-basket
+				width: 277px			
 
 	.slider
 		margin-top: 10px
@@ -501,6 +533,7 @@
 	.subtitle
 		&-mobile
 			display: block
+			width: 296px
 
 	.footer
 		&-h
@@ -575,7 +608,18 @@
 		&-content
 			&__list
 				li
-					width: 229px			
+					width: 229px
+	
+	.btn
+		&-close
+			display: none
+
+	.btn
+		&-green
+			padding-left: 6px
+
+	.home-content__list ul li
+		width: 250px
 
 @media only screen and (max-width: 516px)
 	.btn

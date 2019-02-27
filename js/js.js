@@ -33,7 +33,7 @@ $(document).ready(function(){
 		prevArrow: '<div class="arrow arrow_left"><i class="fas fa-chevron-left"></i></div>',
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 1199,
 				settings: {
 					arrows: true
 				}
