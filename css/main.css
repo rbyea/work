@@ -786,6 +786,14 @@ img.slider__item.slick-slide {
   font-size: 24px;
   line-height: 36px;
   border: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.button-blue:hover {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  background-color: #136fa8;
 }
 
 .button-green {
@@ -799,6 +807,22 @@ img.slider__item.slick-slide {
   line-height: 18px;
   border: none;
   margin-left: 16px;
+}
+
+.button-green:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  background-color: #87bd23;
+}
+
+button.button.button-green.button-product.add-in-basket {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+button.button.button-green.button-product.add-in-basket:hover {
+  background-color: #71a023;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 ul {
@@ -1098,7 +1122,7 @@ ul {
 
 .people-link a {
   cursor: pointer;
-  color: #666666;
+  color: #333333;
 }
 
 .people-link-two {
@@ -1111,6 +1135,10 @@ ul {
 .people-link-two a {
   color: #333333;
   cursor: pointer;
+}
+
+.people-link__more:hover {
+  color: #666666;
 }
 
 .people-content {
@@ -1161,6 +1189,14 @@ ul {
   top: -5px;
   color: #666666;
   font-size: 20px;
+}
+
+.product-content {
+  margin-top: 60px;
+}
+
+.feedback:hover {
+  color: #666666;
 }
 
 .footer {
