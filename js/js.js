@@ -193,7 +193,19 @@ $(document).ready(function () {
 		$(location).attr('href',url);
 	});
 
+
+	// оставить отзыв
+	
+
 }); // end jquery
+$(document).ready(function () {
+	$('.feedback').on('click', function(){
+		$('.modal-feedback').addClass('modal-feedback__visible');
+	});
+	$('.modal-feedback__close').click(function(){
+		$('.modal-feedback').removeClass('modal-feedback__visible');
+	});
+});
 
 // показать скрыть отзывы
 // Функция открытия комментов
