@@ -814,7 +814,7 @@
     </div>
   </footer>
 
-  <div class="modal-call modal-call__visible">
+  <div class="modal-call">
     <div class="modal-call__window">
       <div class="modal-call__close"><i class="fas fa-times"></i></div>
       <div class="modal-call__title">
@@ -865,7 +865,27 @@
 	
 	<div class="modal-feedback">
 		<div class="modal-feedback__window">
-			<div class="modal-feedback__close"><i class="fas fa-times"></i></div>
+      <div class="modal-feedback__close"><i class="fas fa-times"></i></div>
+      <h2 class="modal-feedback__title">
+        Оставьте отзыв
+      </h2>
+      <form class="form-feedback" action="#">
+        <div class="form-modal__feedback">
+          <div class="form-modal__feedback_h">
+            <label for="form-modal__feedback">Имя</label>
+            <input class="form-modal__feedback" required type="text">
+          </div>
+          <div class="form-modal__feedback_l">
+            <label for="">Рейтинг (от 1 до 5)</label>
+            <input type="text">
+          </div>
+        </div>
+        <div class="form-modal__feedback_text">
+          <label for="form-h-modal">Отзыв</label>
+          <textarea class="textarea" name="text"></textarea>
+        </div>
+        <button class="button button-blue form-btn-blue">Отправить</button>
+      </form>
 		</div>
 		
 	</div> <!-- /modal-feedback -->
