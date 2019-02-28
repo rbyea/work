@@ -202,6 +202,20 @@ img.slider__item.slick-slide {
   outline: none;
 }
 
+.modal-call__input-wrap {
+  position: relative;
+}
+
+.modal-call__input-wrap .error-label {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+  color: red;
+  word-wrap: normal;
+  overflow-x: visible;
+  text-align: center;
+}
+
 .modal-call__visible {
   display: -webkit-box;
   display: -ms-flexbox;
