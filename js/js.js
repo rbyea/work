@@ -280,3 +280,26 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$(".header-mobile").sticky({ topSpacing: 0 });
 });
+
+//валидация формы
+$(document).ready(function () {
+	$('.error-label').css('display', 'none');
+
+	$('.modal-call__form button').on('click', function(e) {
+		e.preventDefault();
+		var form = $('.modal-call__form');
+		var phone = form.find('input[type="tel"]');
+		console.log('пусто')
+		var errorPhone = phone.find('.error-label');
+		console.log(errorPhone);
+		// проверка телефона
+		if ( phone === '' ) {
+			console.log('пусто');
+			errorPhone.text('Пожалуйста, введите номер');
+			errorPhone.css('display', 'block');
+		} else {
+      errorPhone.css('visibility', 'hidden');
+    }
+	});
+
+});

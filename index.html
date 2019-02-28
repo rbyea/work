@@ -814,7 +814,7 @@
     </div>
   </footer>
 
-  <div class="modal-call">
+  <div class="modal-call modal-call__visible">
     <div class="modal-call__window">
       <div class="modal-call__close"><i class="fas fa-times"></i></div>
       <div class="modal-call__title">
@@ -822,8 +822,11 @@
         мы перезвоним!
       </div>
       <form class="modal-call__form">
-        <label class="modal-call__label" for="modal-phone">номер телефона</label>
-        <input class="modal-call__input" id="modal-phone" type="tel" placeholder="+7 909 132 22 33" required>
+        <div class="modal-call__input-wrap">
+					<label class="modal-call__label" for="modal-phone">номер телефона</label>
+					<input class="modal-call__input" id="modal-phone error-label" type="tel" placeholder="+7 909 132 22 33" required>
+					<label class="error-label" for="error-label"></label>
+				</div>
         <button class="button button-blue">Заказать звонок</button>
       </form>
     </div> <!-- /modal-call__window -->
