@@ -1,5 +1,4 @@
 .slider
-  margin-left: 90px
   &__item
     img
       display: block
@@ -27,11 +26,12 @@
       max-width: 100%
       max-height: 100%
 .home
-  padding-top: 18px
-  padding-bottom: 31px
+  padding-top: 9px
+  padding-bottom: 20px
   &-list
     color: #666666
     font-size: 14px
+    margin-bottom: 6px
     &__close
       &:before
         display: none
@@ -50,10 +50,14 @@
     font-weight: 400
     line-height: 36px
   &-content
-    margin-left: 48px
+    margin-left: 64px
     &__title
-      margin-top: 15px
+      margin-top: 26px
       margin-bottom: 0
+      color: #333333
+      font-size: 29px
+      font-weight: bold
+      line-height: 36px
     &__assessment
       display: flex
       &_rating
@@ -126,11 +130,9 @@
     border-radius: 4px
     background-color: #87bd23
     color: #ffffff
-    font-size: 18px
+    font-size: 24px
     font-weight: 400
     line-height: 18px
-    padding-right: 48px
-    padding-left: 48px
     border: none
     margin-left: 16px
 
@@ -182,3 +184,21 @@ ul
     content: '<'
     position: absolute
     left: -16px
+
+.slick-slider
+  max-width: 482px
+
+.btn-buy-green
+  transition: all .5s ease
+  &:hover
+    background-color: rgba(0, 0, 0, 0.15)
+    background-color: #87bd23
+    transition: all .5s ease
+    border: 1px solid #87bd23
+
+.call
+  transition: all .5s ease
+  &:hover
+    transition: all .5s ease
+    color: #333333
+    border: 1px solid #333333
