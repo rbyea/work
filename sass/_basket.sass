@@ -83,6 +83,7 @@
 				margin-bottom: 0
 			&_contact
 				display: flex
+				margin-bottom: 25px
 				&-region
 					display: flex
 					flex-direction: column
@@ -199,3 +200,27 @@ form
 		right: 0
 		top: 34px
 		right: 10px
+
+a.basket-menu
+	position: relative
+	&:hover
+		color: #1484c7 !important
+
+.before-menu
+	&:before
+		content: '<'
+		position: absolute
+		left: -23px
+		color: #666666
+
+.form-unvisible
+	display: none
+
+.form-visible
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.necessary
+	cursor: pointer
+

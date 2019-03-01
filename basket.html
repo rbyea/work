@@ -15,11 +15,11 @@
 
 <body>
 	<header class="header">
-	
+
 		<div class="container header-botton header-mob">
 			<div class="row vertical-aling">
 				<div class="col-xl-3 col-lg-3 col-md-5 col-sm-5 col-5">
-	
+
 					<div class="header-box">
 						<div class="header-box__image">
 							<img src="img/header/logo.png" alt="logo">
@@ -46,7 +46,7 @@
 						</div>
 					</div>
 					<div class="btn-mobile_green">
-						<button class="btn-green buy-tranparent"><i class="fas fa-shopping-cart"></i>
+						<button class="btn-green buy-tranparent"><img src="img/header/shopping-cart.png" alt="">
 							<div class="btn-close">Корзина</div><span> 1 </span>
 						</button>
 					</div>
@@ -73,8 +73,8 @@
 							<div class="header-navbar__list ">
 								<nav>
 									<ul>
-										<li><a href="#menu-one">Главная</a> </li>
-										<li><a href="#menu-two">Корзина</a> </li>
+										<li><a class="basket-menu" href="#">Главное</a></li>
+										<li><a class="basket-menu before-menu" href="#">Корзина</a></li>
 									</ul>
 								</nav>
 							</div>
@@ -82,7 +82,7 @@
 						<div class="col-xl-1 col-md-1"></div>
 						<div class="col-xl-2 col-md-2">
 							<div class="header-navbar__btn">
-								<button class="button buy-tranparent"><i class="fas fa-shopping-cart"></i>
+								<button class="button  btn-buy-green buy-tranparent"><img src="img/header/shopping-cart.png" alt="">
 									Корзина<span>1</span></button>
 							</div>
 						</div>
@@ -251,34 +251,38 @@
 								<div class="necessary">
 									Указать адрес <br> доставки (необязтаельно)
 								</div>
-								<div class="basket-description__box_contact-region">
-									<label for="contact-region">Область</label>
-									<input type="text" class="contact-region">
+								<div class="form-unvisible">
+									<div class="basket-description__box_contact-region">
+										<label for="contact-region">Область</label>
+										<input type="text" class="contact-region">
+									</div>
+									<div class="city">
+										<div class="city-one">
+											<label for="contact-city">Город</label>
+											<input type="text" class="contact-city">
+										</div>
+										<div class="city-two">
+											<label for="contact-strit">Улица</label>
+											<input type="text" class="contact-strit">
+										</div>
+									</div>
+									<div class="house">
+										<div class="house-one">
+											<label for="contact-house">Дом</label>
+											<input type="text" class="contact-house">
+										</div>
+										<div class="house-two">
+											<label for="contact-apartment">Квартира</label>
+											<input type="text" class="contact-apartment">
+										</div>
+										<div class="house-three">
+											<label for="contact-index">Индекс</label>
+											<input type="text" class="contact-index">
+										</div>
+									</div>
+
 								</div>
-								<div class="city">
-									<div class="city-one">
-										<label for="contact-city">Город</label>
-										<input type="text" class="contact-city">
-									</div>
-									<div class="city-two">
-										<label for="contact-strit">Улица</label>
-										<input type="text" class="contact-strit">
-									</div>
-								</div>
-								<div class="house">
-									<div class="house-one">
-										<label for="contact-house">Дом</label>
-										<input type="text" class="contact-house">
-									</div>
-									<div class="house-two">
-										<label for="contact-apartment">Квартира</label>
-										<input type="text" class="contact-apartment">
-									</div>
-									<div class="house-three">
-										<label for="contact-index">Индекс</label>
-										<input type="text" class="contact-index">
-									</div>
-								</div>
+
 								<button type="submit" class="button button-blue btn-form">Подтвердить заказ</button>
 							</form>
 						</div>
@@ -390,53 +394,53 @@
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.0.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/zoomsl-3.0.min.js"></script>
+	<script src="js/jquery-migrate-3.0.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/zoomsl-3.0.min.js"></script>
 	<script src="js/jquery.sticky.js"></script>
 	<script src="js/jquery.validate.js"></script>
 	<script>
-			// калькулятор для корзины
-	$(function() {
+		// калькулятор для корзины
+		$(function () {
 
-		$('.order-form').validate({
-			rules: {
+			$('.order-form').validate({
+				rules: {
 
-			}
+				}
+			});
+
+			var much;
+			var result;
+			var price = $('.basket-content__box_configuration-price').find('.basket-content__box_configuration-b').text().replace('руб.', '');
+			console.log(price);
+			var curPrice = parseInt(price)
+
+			function updatePrice() {
+				var totalPrice = result * curPrice;
+				$('.total-price').text(totalPrice + 'руб.');
+			};
+
+			$(".minus").click(function () {
+				much = +$(this).closest(".basket-content__box_configuration-much").find("input").val();
+				result = much - 1;
+				if (result < 1) {
+					result = 1;
+				}
+				$(this).closest(".basket-content__box_configuration-much").find("input").val(result);
+				updatePrice();
+				return true;
+			});
+			$(".plus").click(function () {
+				much = +$(this).closest(".basket-content__box_configuration-much").find("input").val();
+				result = much + 1;
+				$(this).closest(".basket-content__box_configuration-much").find("input").val(result);
+				updatePrice();
+				return true;
+			});
+
+
 		});
-
-	var much;
-	var result;
-	var price = $('.basket-content__box_configuration-price').find('.basket-content__box_configuration-b').text().replace('руб.','');
-	console.log(price);
-	var curPrice = parseInt(price)
-
-	function updatePrice() {
-		var totalPrice = result * curPrice;
-		$('.total-price').text(totalPrice + 'руб.');
-	};
-
-		$(".minus").click(function () {
-			much = +$(this).closest(".basket-content__box_configuration-much").find("input").val();
-			result = much - 1;
-			if (result < 1) {
-				result = 1;
-			}
-			$(this).closest(".basket-content__box_configuration-much").find("input").val(result);
-			updatePrice();
-			return true;
-		});
-		$(".plus").click(function () {
-			much = +$(this).closest(".basket-content__box_configuration-much").find("input").val();
-			result = much + 1;
-			$(this).closest(".basket-content__box_configuration-much").find("input").val(result);
-			updatePrice();
-			return true;
-		});
-		
-
-	});
 
 		/*
 			$('.basket-content__box_configuration-much').each(function () {
@@ -447,6 +451,14 @@
 		});
 		*/
 	</script>
+	<script>
+		$('.necessary').on('click', function () {
+				$('.form-unvisible').toggleClass('form-visible');
+			});
+			$('.necessary').on('click', function () {
+				$('form-visible').toggleClass('form-unvisible');
+			});
+</script>
 
 </body>
 
